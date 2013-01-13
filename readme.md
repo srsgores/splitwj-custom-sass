@@ -5,11 +5,12 @@ SASS.  The default system metro theme has been taken, split up into parts, and t
 variables defined for the stylesheet.
 
 ##How to Use This
-1. Navigate to your home directory (``C:\Users\Sean\Documents\Visual Studio 2012\Projects\``),
+1. Navigate to your home directory (``C:\Users\[your_username]\Documents\Visual Studio 2012\Projects\``),
 and unzip this repo to that directory.
 2. Open up Visual Studio 2012
 3. Navigate to *File > New > Project..*
 4. Select the Javascript category, and double-click on "Sass Custom Split App"
+![Create New Project](http://seangoresht.com/images/vs2012newsassapp.png)
 
 ## License
 Licensed under the General Public License (Free)
