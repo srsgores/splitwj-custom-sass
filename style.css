@@ -1,0 +1,5811 @@
+/*Grid*/
+/*Type*/
+/* Transitions*/
+/* =============================================================================
+Colours
+========================================================================== */
+/* =============================================================================
+shadow
+========================================================================== */
+/* =============================================================================
+Buttons
+========================================================================== */
+/* =============================================================================
+Borders
+========================================================================== */
+/**
+ * Non-semantic helper classes: please define your styles before this section.
+ */
+/* For image replacement */
+/* line 8, _helpers.scss */
+.ir {
+	display: block;
+	text-indent: -99in;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+}
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+/* line 19, _helpers.scss */
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+/* line 26, _helpers.scss */
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+/* line 39, _helpers.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 49, _helpers.scss */
+.invisible {
+	visibility: hidden;
+}
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations.
+   nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 56, _helpers.scss */
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+/* line 61, _helpers.scss */
+.clearfix:after {
+	clear: both;
+}
+
+/* line 65, _helpers.scss */
+.clearfix {
+	zoom: 1;
+}
+
+/* line 69, _helpers.scss */
+.centred {
+	text-align: center;
+}
+
+/* line 73, _helpers.scss */
+.pie-element {
+	behavior: url("/css/PIE.htc");
+	position: relative;
+}
+
+/* line 87, _helpers.scss */
+.pie-container {
+	z-index: 0;
+	position: relative;
+}
+
+/*Grid*/
+/*Type*/
+/* Transitions*/
+/* =============================================================================
+Colours
+========================================================================== */
+/* =============================================================================
+shadow
+========================================================================== */
+/* =============================================================================
+Buttons
+========================================================================== */
+/* =============================================================================
+Borders
+========================================================================== */
+/* ==================================================================================================================== */
+/* ! SCSS 1140 Grid V2 by James Ramsay \ http://jwr.vc \ http://www.twitter.com/jamesramsay                           */
+/* ! derived from                                                                                                       */
+/* ! CSS 1140 Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
+/* ==================================================================================================================== */
+/* line 59, _grids.scss */
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/* line 64, _grids.scss */
+.row {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 0.7em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	transition: 0.5s all;
+}
+
+/* line 72, _grids.scss */
+.row.extended-height {
+	overflow: visible;
+}
+
+/* line 77, _grids.scss */
+.col, .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+	margin-right: 3.8%;
+	float: left;
+	min-height: 1px;
+}
+
+/* line 91, _grids.scss */
+.row .onecol {
+	width: 4.85%;
+}
+
+/* line 91, _grids.scss */
+.row .twocol {
+	width: 13.5%;
+}
+
+/* line 91, _grids.scss */
+.row .threecol {
+	width: 22.15%;
+}
+
+/* line 91, _grids.scss */
+.row .fourcol {
+	width: 30.8%;
+}
+
+/* line 91, _grids.scss */
+.row .fivecol {
+	width: 39.45%;
+}
+
+/* line 91, _grids.scss */
+.row .sixcol {
+	width: 48.1%;
+}
+
+/* line 91, _grids.scss */
+.row .sevencol {
+	width: 56.75%;
+}
+
+/* line 91, _grids.scss */
+.row .eightcol {
+	width: 65.4%;
+}
+
+/* line 91, _grids.scss */
+.row .ninecol {
+	width: 74.05%;
+}
+
+/* line 91, _grids.scss */
+.row .tencol {
+	width: 82.7%;
+}
+
+/* line 91, _grids.scss */
+.row .elevencol {
+	width: 91.35%;
+}
+
+/* line 97, _grids.scss */
+.row .twelvecol {
+	width: 100%;
+	float: left;
+}
+
+/* line 102, _grids.scss */
+.last {
+	margin-right: 0;
+}
+
+/* line 106, _grids.scss */
+img, object, embed {
+	max-width: 100%;
+}
+
+/* line 110, _grids.scss */
+img {
+	height: auto;
+}
+
+/*Grid*/
+/*Type*/
+/* Transitions*/
+/* =============================================================================
+Colours
+========================================================================== */
+/* =============================================================================
+shadow
+========================================================================== */
+/* =============================================================================
+Buttons
+========================================================================== */
+/* =============================================================================
+Borders
+========================================================================== */
+/**
+ * Non-semantic helper classes: please define your styles before this section.
+ */
+/* For image replacement */
+/* line 8, _helpers.scss */
+.ir {
+	display: block;
+	text-indent: -99in;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+}
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+/* line 19, _helpers.scss */
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+/* line 26, _helpers.scss */
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+/* line 39, _helpers.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 49, _helpers.scss */
+.invisible {
+	visibility: hidden;
+}
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations.
+   nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 56, _helpers.scss */
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+/* line 61, _helpers.scss */
+.clearfix:after {
+	clear: both;
+}
+
+/* line 65, _helpers.scss */
+.clearfix {
+	zoom: 1;
+}
+
+/* line 69, _helpers.scss */
+.centred {
+	text-align: center;
+}
+
+/* line 73, _helpers.scss */
+.pie-element {
+	behavior: url("/css/PIE.htc");
+	position: relative;
+}
+
+/* line 87, _helpers.scss */
+.pie-container {
+	z-index: 0;
+	position: relative;
+}
+
+/*Grid*/
+/*Type*/
+/* Transitions*/
+/* =============================================================================
+Colours
+========================================================================== */
+/* =============================================================================
+shadow
+========================================================================== */
+/* =============================================================================
+Buttons
+========================================================================== */
+/* =============================================================================
+Borders
+========================================================================== */
+/**
+ * Non-semantic helper classes: please define your styles before this section.
+ */
+/* For image replacement */
+/* line 8, _helpers.scss */
+.ir {
+	display: block;
+	text-indent: -99in;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+}
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+/* line 19, _helpers.scss */
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+/* line 26, _helpers.scss */
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+/* line 39, _helpers.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 49, _helpers.scss */
+.invisible {
+	visibility: hidden;
+}
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations.
+   nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 56, _helpers.scss */
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+/* line 61, _helpers.scss */
+.clearfix:after {
+	clear: both;
+}
+
+/* line 65, _helpers.scss */
+.clearfix {
+	zoom: 1;
+}
+
+/* line 69, _helpers.scss */
+.centred {
+	text-align: center;
+}
+
+/* line 73, _helpers.scss */
+.pie-element {
+	behavior: url("/css/PIE.htc");
+	position: relative;
+}
+
+/* line 87, _helpers.scss */
+.pie-container {
+	z-index: 0;
+	position: relative;
+}
+
+/*
+Back button.
+*/
+/* line 5, _buttons.scss */
+.win-backbutton {
+	display: inline-block;
+	min-width: 0;
+	min-height: 0;
+	background-clip: border-box;
+	box-sizing: border-box;
+	border-radius: 50%;
+	border-width: 2px;
+	border-style: solid;
+	padding: 0;
+	text-align: center;
+	/* Normal sizing. */
+	width: 41px;
+	height: 41px;
+	font-size: 14pt;
+	line-height: 37px;
+	/* line-height must match the content box height. */
+	vertical-align: baseline;
+}
+
+/* line 25, _buttons.scss */
+.win-backbutton:hover, .win-backbutton:hover:active {
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 50%;
+}
+
+/* line 31, _buttons.scss */
+.win-backbutton::before {
+	font-family: "Segoe UI Symbol";
+	font-weight: normal;
+	content: "\E0D5";
+	vertical-align: 50%;
+}
+
+/* line 38, _buttons.scss */
+.win-backbutton:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::before {
+	content: "\E0AE";
+}
+
+/* line 42, _buttons.scss */
+.win-backbutton:disabled, .win-backbutton:disabled:active {
+	visibility: hidden;
+}
+
+/* line 46, _buttons.scss */
+button.win-command {
+	background: none;
+	background-clip: border-box;
+	height: auto;
+	/* height is 88px (label) or 68px (no label) */
+	padding: 12px 0;
+	/* bottom dependent on label/img, 2px margin */
+	margin: 0;
+	border: 2px solid;
+	/* reserve focus rect */
+	min-width: 1.3em;
+	text-align: center;
+	font-size: 9pt;
+	line-height: 16px;
+	font-weight: normal;
+	/* Commands are lrtb */
+	writing-mode: lr-tb;
+}
+
+/* line 63, _buttons.scss */
+button.win-command:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	writing-mode: rl-tb;
+}
+
+/* line 67, _buttons.scss */
+button.win-command:focus {
+	outline: none;
+}
+
+/*
+Command button icons.
+*/
+/* line 74, _buttons.scss */
+.win-commandicon {
+	display: inline-block;
+	margin: 0 28px;
+	/* padding for command buttons, 2px/side for focus */
+	min-width: 0;
+	min-height: 0;
+	padding: 0;
+	/* Normal sizing */
+	width: 1.3em;
+	height: 1.3em;
+	box-sizing: border-box;
+	cursor: default;
+}
+
+/* line 88, _buttons.scss */
+.win-commandimage {
+	/* Default font for glyphs. */
+	font-family: "Segoe UI Command";
+	letter-spacing: 0;
+	/* Applications provide their own content, like &#xE0D5;. */
+	vertical-align: middle;
+	font-size: 14pt;
+	margin: -2px;
+	line-height: 1.3em;
+	/* line-height must match the content box height */
+	background-position: 0 0;
+	background-origin: border-box;
+	display: inline-block;
+	/* Still 40px */
+	width: 1.3em;
+	height: 1.3em;
+	background-size: 160px 80px;
+}
+
+/*
+Offsets for sprite versions.
+*/
+/* line 110, _buttons.scss */
+button:hover .win-commandimage, button:active .win-commandimage {
+	background-position: -40px 0;
+}
+
+/* line 114, _buttons.scss */
+button:hover:active .win-commandimage {
+	background-position: -80px 0;
+}
+
+/* line 118, _buttons.scss */
+button:-ms-keyboard-active .win-commandimage {
+	background-position: -80px 0;
+}
+
+/* line 123, _buttons.scss */
+button:disabled .win-commandimage,
+button:disabled:active .win-commandimage {
+	background-position: -120px 0;
+}
+
+/*
+Offsets for sprite versions in selected state.
+*/
+/* line 130, _buttons.scss */
+button[aria-checked=true] .win-commandimage {
+	background-position: 0 -40px;
+}
+
+/* line 135, _buttons.scss */
+button[aria-checked=true]:hover .win-commandimage,
+button[aria-checked=true]:active .win-commandimage {
+	background-position: -40px -40px;
+}
+
+/* line 139, _buttons.scss */
+button[aria-checked=true]:hover:active .win-commandimage {
+	background-position: -80px -40px;
+}
+
+/* line 143, _buttons.scss */
+button[aria-checked=true]:-ms-keyboard-active .win-commandimage {
+	background-position: -80px -40px;
+}
+
+/* line 148, _buttons.scss */
+button[aria-checked=true]:disabled .win-commandimage,
+button[aria-checked=true]:disabled:active .win-commandimage {
+	background-position: -120px -40px;
+}
+
+/*
+Command button "ring".
+*/
+/* line 159, _buttons.scss */
+.win-commandring,
+button:hover .win-commandring,
+button:active .win-commandring,
+button.win-command:disabled .win-commandring,
+button.win-command:disabled:active .win-commandring {
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 50%;
+	background-clip: border-box;
+}
+
+/* line 170, _buttons.scss */
+button:hover:active .win-commandring,
+button[aria-checked=true] .win-commandring,
+button[aria-checked=true]:active .win-commandring,
+button[aria-checked=true]:disabled .win-commandring,
+button[aria-checked=true]:disabled:active .win-commandring {
+	background-clip: border-box;
+}
+
+/*
+Command button labels.
+*/
+/* line 177, _buttons.scss */
+button.win-command .win-label {
+	position: relative;
+	line-height: 16px;
+	display: block;
+	max-width: 88px;
+	/* 100px button, but allow for 2px margins and 4px padding on each side */
+	margin-top: 5px;
+	margin-bottom: -1px;
+	padding-left: 4px;
+	/* 12px between buttons, 6px per side, minus 2px margins */
+	padding-right: 4px;
+	overflow: hidden;
+	word-wrap: break-word;
+	word-break: keep-all;
+}
+
+/*
+AppBarCommand separator.
+*/
+/* line 194, _buttons.scss */
+hr.win-command {
+	display: inline-block;
+	padding: 0;
+	margin: 14px 29px 34px 30px;
+	width: 1px;
+	height: 1.3em;
+	border: 0;
+	vertical-align: top;
+}
+
+/* line 204, _buttons.scss */
+hr.win-command:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-left: 29px;
+	margin-right: 30px;
+}
+
+/*
+AppBar Edgy Container
+*/
+/* line 212, _buttons.scss */
+.win-appbar {
+	z-index: 1002;
+	border-width: 0;
+	width: 100%;
+	height: auto;
+	left: 0;
+	position: fixed;
+	-ms-touch-select: none;
+}
+
+/*
+AppBar control.
+*/
+/* line 225, _buttons.scss */
+.win-commandlayout {
+	text-align: right;
+	padding-left: 10px;
+	padding-right: calc(((100% +5px) mod 20px ) + 5 px );
+	width: calc(100% -10px -(((100% +5px) mod 20px ) + 5 px ) );
+	/* Hide whitespace between buttons. */
+	font-size: 0;
+	min-height: 88px;
+}
+
+/* line 237, _buttons.scss */
+.win-commandlayout .win-selection {
+	float: left;
+}
+
+/* line 241, _buttons.scss */
+.win-commandlayout:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	text-align: left;
+}
+
+/* line 245, _buttons.scss */
+.win-commandlayout .win-selection:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	float: right;
+}
+
+/*Grid*/
+/*Type*/
+/* Transitions*/
+/* =============================================================================
+Colours
+========================================================================== */
+/* =============================================================================
+shadow
+========================================================================== */
+/* =============================================================================
+Buttons
+========================================================================== */
+/* =============================================================================
+Borders
+========================================================================== */
+/**
+ * Non-semantic helper classes: please define your styles before this section.
+ */
+/* For image replacement */
+/* line 8, _helpers.scss */
+.ir {
+	display: block;
+	text-indent: -99in;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+}
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+/* line 19, _helpers.scss */
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+/* line 26, _helpers.scss */
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+/* line 39, _helpers.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 49, _helpers.scss */
+.invisible {
+	visibility: hidden;
+}
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations.
+   nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 56, _helpers.scss */
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+/* line 61, _helpers.scss */
+.clearfix:after {
+	clear: both;
+}
+
+/* line 65, _helpers.scss */
+.clearfix {
+	zoom: 1;
+}
+
+/* line 69, _helpers.scss */
+.centred {
+	text-align: center;
+}
+
+/* line 73, _helpers.scss */
+.pie-element {
+	behavior: url("/css/PIE.htc");
+	position: relative;
+}
+
+/* line 87, _helpers.scss */
+.pie-container {
+	z-index: 0;
+	position: relative;
+}
+
+/* =============================================================================
+Forms
+========================================================================== */
+/*
+Text input controls.
+*/
+/* line 10, _forms.scss */
+input[type=text], input[type=password], input[type=email], input[type=number],
+input[type=tel], input[type=url], input[type=search], textarea, .win-textarea {
+	-ms-user-select: element;
+	min-height: 28px;
+	min-width: 64px;
+	margin: 4px 0;
+	border-width: 2px;
+	border-style: solid;
+	font-size: 11pt;
+	font-weight: 400;
+	line-height: 1.3636;
+	/* 20px when font-size is 11pt */
+}
+
+/* line 23, _forms.scss */
+input[type=text], input[type=password], input[type=email], input[type=number],
+input[type=tel], input[type=url], input[type=search] {
+	width: 276px;
+	padding: 0;
+}
+
+/* line 28, _forms.scss */
+input::-ms-value {
+	margin: 4px 8px;
+}
+
+/* line 32, _forms.scss */
+textarea, .win-textarea {
+	overflow-y: scroll;
+	word-wrap: break-word;
+	padding: 4px 8px;
+	/* Leave space for autohiding scrollbar on elements that enable text selection. */
+	padding-right: 17px;
+}
+
+/* line 40, _forms.scss */
+textarea:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm), .win-textarea:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	/* Flip sides for autohiding scrollbar padding on RTL layouts. */
+	padding-right: 8px;
+	padding-left: 17px;
+}
+
+/* line 46, _forms.scss */
+textarea {
+	min-width: 260px;
+	min-height: 39px;
+}
+
+/* line 51, _forms.scss */
+.win-textarea {
+	width: 260px;
+	height: 39px;
+}
+
+/*
+Clear and reveal button styles.
+*/
+/* line 60, _forms.scss */
+input::-ms-clear, input::-ms-reveal {
+	margin-left: 2px;
+}
+
+/* line 65, _forms.scss */
+input:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-clear,
+input:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-reveal {
+	margin-left: 0;
+	margin-right: 2px;
+}
+
+/*
+Button control.
+*/
+/* line 73, _forms.scss */
+button, input[type=button], input[type=reset], input[type=submit] {
+	min-height: 32px;
+	/* content (20px) + padding + border */
+	min-width: 90px;
+	padding: 4px 8px;
+	border-width: 2px;
+	border-style: solid;
+	background-clip: padding-box;
+	font-size: 11pt;
+	font-weight: 600;
+	line-height: 1.3636;
+	/* 20px when font-size is 11pt */
+}
+
+/*
+File upload control.
+*/
+/* line 88, _forms.scss */
+input[type=file] {
+	border: none;
+	min-width: 100px;
+	min-height: 20px;
+	width: 340px;
+	height: 32px;
+	padding: 0;
+	margin: 7px 8px 21px 8px;
+	background-clip: padding-box;
+}
+
+/* line 99, _forms.scss */
+input[type=file]::-ms-value {
+	margin: 0;
+	border-width: 2px;
+	border-style: solid;
+	border-right-style: none;
+	border-radius: 0;
+	background-clip: padding-box;
+	font-size: 11pt;
+	font-weight: 400;
+	line-height: 1.3636;
+	/* 20px when font-size is 11pt */
+}
+
+/* line 111, _forms.scss */
+input[type=file]:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-value {
+	border-left-style: none;
+	border-right-style: solid;
+}
+
+/* line 116, _forms.scss */
+input[type=file]::-ms-browse {
+	margin: 0;
+	padding: 0 18px;
+	border-width: 2px;
+	border-style: solid;
+	background-clip: padding-box;
+	font-size: 11pt;
+	font-weight: 600;
+	line-height: 1.3636;
+	/* 20px when font-size is 11pt */
+}
+
+/*
+Select control.
+*/
+/* line 130, _forms.scss */
+select {
+	min-height: 32px;
+	min-width: 80px;
+	border-width: 2px;
+	border-style: solid;
+	margin: 4px 0;
+	font-size: 11pt;
+	font-weight: 400;
+	line-height: 1.3636;
+	/* 20px when font-size is 11pt */
+}
+
+/* line 141, _forms.scss */
+select::-ms-value {
+	padding: 4px 8px;
+	margin: 0;
+}
+
+/* line 146, _forms.scss */
+select::-ms-expand {
+	border: 0;
+	padding-left: 6px;
+	padding-right: 6px;
+	background-color: transparent;
+}
+
+/*
+Radio button and checkbox shared styles.
+*/
+/* line 156, _forms.scss */
+input::-ms-check {
+	border-width: 2px;
+	border-style: solid;
+	display: inline-block;
+}
+
+/*
+Radio button.
+*/
+/* line 165, _forms.scss */
+input[type=radio] {
+	width: 23px;
+	height: 23px;
+	margin-left: -1px;
+	margin-right: 4px;
+	margin-bottom: -2px;
+}
+
+/* line 173, _forms.scss */
+input[type=radio]:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-left: 4px;
+	margin-right: -1px;
+}
+
+/*
+Checkbox.
+*/
+/* line 181, _forms.scss */
+input[type=checkbox] {
+	width: 21px;
+	height: 21px;
+	margin-right: 5px;
+}
+
+/* line 187, _forms.scss */
+input[type=checkbox]:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+/*
+Range control.
+*/
+/* line 195, _forms.scss */
+input[type=range] {
+	width: 280px;
+	height: auto;
+	padding: 17px 0 32px 0;
+}
+
+/* line 201, _forms.scss */
+input[type=range]::-ms-track {
+	padding: 0;
+	width: auto;
+	height: 11px;
+	border-style: none;
+	color: transparent;
+	/* ticks hidden by default */
+}
+
+/* line 209, _forms.scss */
+input[type=range]::-ms-thumb {
+	width: 11px;
+	height: 11px;
+	border-style: none;
+}
+
+/* line 215, _forms.scss */
+input[type=range]::-ms-ticks-before, input[type=range]::-ms-ticks-after {
+	width: 100%;
+	height: 5px;
+	display: none;
+}
+
+/* line 221, _forms.scss */
+input[type=range]:disabled::-ms-fill-lower {
+	margin-right: 5px;
+}
+
+/* line 225, _forms.scss */
+input[type=range]:disabled::-ms-fill-upper {
+	margin-left: 6px;
+}
+
+/* line 229, _forms.scss */
+input[type=range]:disabled:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-fill-lower {
+	margin-right: 0;
+	margin-left: 5px;
+}
+
+/* line 234, _forms.scss */
+input[type=range]:disabled:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-fill-upper {
+	margin-left: 0;
+	margin-right: 6px;
+}
+
+/*
+Vertical range control.
+*/
+/* line 242, _forms.scss */
+input[type=range].win-vertical {
+	width: auto;
+	height: 191px;
+	padding: 0 17px;
+	writing-mode: bt-lr;
+}
+
+/* line 249, _forms.scss */
+input[type=range].win-vertical:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	writing-mode: bt-rl;
+}
+
+/* line 253, _forms.scss */
+input[type=range].win-vertical::-ms-track {
+	width: 11px;
+	height: auto;
+}
+
+/* line 258, _forms.scss */
+input[type=range].win-vertical:disabled::-ms-fill-lower {
+	margin-right: 0;
+	margin-top: 6px;
+}
+
+/* line 263, _forms.scss */
+input[type=range].win-vertical:disabled::-ms-fill-upper {
+	margin-left: 0;
+	margin-bottom: 5px;
+}
+
+/* line 268, _forms.scss */
+input[type=range].win-vertical:disabled:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-fill-lower {
+	margin-left: 0;
+}
+
+/* line 272, _forms.scss */
+input[type=range].win-vertical:disabled:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-fill-upper {
+	margin-right: 0;
+}
+
+/* line 277, _forms.scss */
+input[type=range].win-vertical::-ms-ticks-before,
+input[type=range].win-vertical::-ms-ticks-after {
+	width: 5px;
+	height: 100%;
+	display: none;
+}
+
+/* line 283, _forms.scss */
+form {
+	margin: 0;
+	padding: 0;
+}
+
+/* line 288, _forms.scss */
+legend {
+	margin: 0 0 10px 0;
+	padding: 0;
+	color: inherit;
+}
+
+/* line 302, _forms.scss */
+input[type=text], input[type=password],
+input[type=email], input[type=number],
+input[type=tel], input[type=url],
+input[type=search], textarea, .win-textarea,
+select, input::-ms-check, input[type=text]:hover, input[type=password]:hover,
+input[type=email]:hover, input[type=number]:hover,
+input[type=tel]:hover, input[type=url]:hover,
+input[type=search]:hover, textarea:hover,
+.win-textarea:hover, select:hover, input:hover::-ms-check {
+	background-clip: border-box;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-color: transparent;
+	color: black;
+}
+
+/* line 318, _forms.scss */
+input[type=text]:focus, input[type=text]:active,
+input[type=password]:focus, input[type=password]:active,
+input[type=email]:focus, input[type=email]:active,
+input[type=number]:focus, input[type=number]:active,
+input[type=tel]:focus, input[type=tel]:active,
+input[type=url]:focus, input[type=url]:active,
+input[type=search]:focus, input[type=search]:active,
+textarea:focus, textarea:active,
+.win-textarea:focus, .win-textarea:active,
+select:focus, select:active {
+	background-clip: border-box;
+	background-color: white;
+	border-color: transparent;
+	color: black;
+}
+
+/* line 329, _forms.scss */
+input[type=text]:disabled, input[type=password]:disabled,
+input[type=email]:disabled, input[type=number]:disabled,
+input[type=tel]:disabled, input[type=url]:disabled,
+input[type=search]:disabled, input[type=file]::-ms-value,
+textarea:disabled, .win-textarea:disabled, select:disabled {
+	background-clip: border-box;
+	background-color: transparent;
+	border-color: rgba(255, 255, 255, 0.4);
+	color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 336, _forms.scss */
+input:disabled::-ms-check, input:disabled:active::-ms-check {
+	/* checkbox and radio have filled disabled state in dark */
+	background-clip: border-box;
+	background-color: rgba(255, 255, 255, 0.4);
+	border-color: transparent;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 348, _forms.scss */
+.win-ui-light input[type=text], .win-ui-light input[type=password],
+.win-ui-light input[type=email], .win-ui-light input[type=number],
+.win-ui-light input[type=tel], .win-ui-light input[type=url],
+.win-ui-light input[type=search], .win-ui-light select, .win-ui-light textarea,
+.win-ui-light .win-textarea, .win-ui-light input::-ms-check {
+	background-clip: padding-box;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-color: rgba(0, 0, 0, 0.27);
+	color: black;
+}
+
+/* line 359, _forms.scss */
+.win-ui-light input[type=text]:hover, .win-ui-light input[type=password]:hover,
+.win-ui-light input[type=email]:hover, .win-ui-light input[type=number]:hover,
+.win-ui-light input[type=tel]:hover, .win-ui-light input[type=url]:hover,
+.win-ui-light input[type=search]:hover, .win-ui-light textarea:hover,
+.win-ui-light select:hover, .win-ui-light .win-textarea:hover, .win-ui-light input:hover::-ms-check {
+	background-color: rgba(255, 255, 255, 0.87);
+	border-color: rgba(0, 0, 0, 0.44);
+	color: black;
+}
+
+/* line 374, _forms.scss */
+.win-ui-light input[type=text]:focus, .win-ui-light input[type=text]:active,
+.win-ui-light input[type=password]:focus, .win-ui-light input[type=password]:active,
+.win-ui-light input[type=email]:focus, .win-ui-light input[type=email]:active,
+.win-ui-light input[type=number]:focus, .win-ui-light input[type=number]:active,
+.win-ui-light input[type=tel]:focus, .win-ui-light input[type=tel]:active,
+.win-ui-light input[type=url]:focus, .win-ui-light input[type=url]:active,
+.win-ui-light input[type=search]:focus, .win-ui-light input[type=search]:active,
+.win-ui-light textarea:focus, .win-ui-light textarea:active,
+.win-ui-light .win-textarea:focus, .win-ui-light .win-textarea:active,
+.win-ui-light select:focus, .win-ui-light select:active {
+	background-color: white;
+	border-color: rgba(0, 0, 0, 0.6);
+	color: black;
+}
+
+/* line 380, _forms.scss */
+.win-ui-light input:hover:active::-ms-check {
+	/* only checkbox and radio have press state */
+	background-clip: border-box;
+	background-color: black;
+	border-color: transparent;
+	color: white;
+}
+
+/* line 388, _forms.scss */
+.win-ui-light input:-ms-keyboard-active::-ms-check {
+	/* only checkbox and radio have press state */
+	background-clip: border-box;
+	background-color: black;
+	border-color: transparent;
+	color: white;
+}
+
+/* line 401, _forms.scss */
+.win-ui-light input[type=text]:disabled, .win-ui-light input[type=password]:disabled,
+.win-ui-light input[type=email]:disabled, .win-ui-light input[type=number]:disabled,
+.win-ui-light input[type=tel]:disabled, .win-ui-light input[type=url]:disabled,
+.win-ui-light input[type=search]:disabled, .win-ui-light input[type=file]::-ms-value,
+.win-ui-light textarea:disabled, .win-ui-light .win-textarea:disabled, .win-ui-light select:disabled,
+.win-ui-light input:disabled::-ms-check, .win-ui-light input:disabled:active::-ms-check {
+	background-clip: padding-box;
+	background-color: rgba(202, 202, 202, 0.4);
+	border-color: rgba(0, 0, 0, 0.15);
+	color: rgba(0, 0, 0, 0.4);
+}
+
+/*
+Placeholder text style.
+*/
+/* line 412, _forms.scss */
+input[type]:-ms-input-placeholder, .win-ui-light input[type]:-ms-input-placeholder,
+textarea:-ms-input-placeholder, .win-ui-light textarea:-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.6);
+	/* same in dark and light */
+}
+
+/* line 416, _forms.scss */
+input[type]:disabled:-ms-input-placeholder, textarea:disabled:-ms-input-placeholder {
+	color: rgba(255, 255, 255, 0.22);
+}
+
+/* line 420, _forms.scss */
+.win-ui-light input[type]:disabled:-ms-input-placeholder, .win-ui-light textarea:disabled:-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.22);
+}
+
+/*
+Invalid style.
+*/
+/* line 427, _forms.scss */
+input[type]:invalid {
+	outline-color: #ff8033;
+	outline-width: 2px;
+}
+
+/*
+Clear and reveal buttons.
+*/
+/* line 435, _forms.scss */
+input::-ms-clear, input::-ms-reveal {
+	background-color: white;
+	color: black;
+}
+
+/* line 440, _forms.scss */
+input::-ms-clear:hover, input::-ms-reveal:hover {
+	background-color: #dedede;
+}
+
+/* line 444, _forms.scss */
+input::-ms-clear:hover:active, input::-ms-reveal:hover:active {
+	background-color: black;
+	color: white;
+}
+
+/*
+Option for select control (all colors are same for both light and dark).
+*/
+/* line 452, _forms.scss */
+option:checked, select:focus::-ms-value {
+	color: white;
+	background-color: #4617b4;
+}
+
+/* line 457, _forms.scss */
+option:hover {
+	color: black;
+	background-color: #c5c5c5;
+}
+
+/* line 462, _forms.scss */
+select:focus option:hover {
+	color: black;
+	background-color: #dedede;
+}
+
+/* line 467, _forms.scss */
+option:checked:hover, select:focus option:checked:hover {
+	color: white;
+	background-color: #5f37be;
+}
+
+/* line 472, _forms.scss */
+option:hover:active, select:focus option:hover:active {
+	color: black;
+	background-color: lightgrey;
+}
+
+/* line 480, _forms.scss */
+option:checked:disabled, option:checked:disabled:active,
+optgroup:disabled option:checked, optgroup:disabled option:checked:active,
+select:disabled option:checked, select:disabled option:checked:active,
+select:disabled:focus::-ms-value {
+	background-color: rgba(255, 255, 255, 0.4);
+	color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 488, _forms.scss */
+.win-ui-light option:checked:disabled, .win-ui-light option:checked:disabled:active,
+.win-ui-light optgroup:disabled option:checked, .win-ui-light optgroup:disabled option:checked:active,
+.win-ui-light select:disabled option:checked, .win-ui-light select:disabled option:checked:active,
+.win-ui-light select:disabled:focus::-ms-value {
+	background-color: rgba(0, 0, 0, 0.55);
+	color: rgba(255, 255, 255, 0.6);
+}
+
+/*
+Button control colors.
+*/
+/* line 497, _forms.scss */
+button, input[type=button], input[type=submit],
+input[type=reset], input[type=file]::-ms-browse {
+	background-color: transparent;
+	border-color: white;
+	color: white;
+}
+
+/* line 503, _forms.scss */
+button[type=submit], input[type=submit] {
+	background-clip: padding-box;
+	background-color: #4617b4;
+}
+
+/* line 509, _forms.scss */
+button:hover, input[type=button]:hover, input[type=reset]:hover,
+input[type=file]::-ms-browse:hover {
+	background-color: rgba(255, 255, 255, 0.13);
+	border-color: white;
+}
+
+/* line 514, _forms.scss */
+button[type=submit]:hover, input[type=submit]:hover {
+	background-clip: padding-box;
+	background-color: #5f37be;
+	border-color: white;
+}
+
+/* line 522, _forms.scss */
+button:hover:active, button[type=submit]:hover:active,
+input[type=button]:hover:active, input[type=reset]:hover:active,
+input[type=submit]:hover:active, input[type=file]::-ms-browse:hover:active {
+	background-clip: border-box;
+	background-color: white;
+	border-color: transparent;
+	color: black;
+}
+
+/* line 531, _forms.scss */
+button:-ms-keyboard-active, button[type=submit]:-ms-keyboard-active,
+input[type=button]:-ms-keyboard-active, input[type=reset]:-ms-keyboard-active,
+input[type=submit]:-ms-keyboard-active {
+	background-clip: border-box;
+	background-color: white;
+	border-color: transparent;
+	color: black;
+}
+
+/* line 543, _forms.scss */
+button:disabled, button[type=submit]:disabled,
+input[type=button]:disabled, input[type=reset]:disabled,
+input[type=submit]:disabled, input[type=file]:disabled::-ms-browse,
+button:disabled:active, button[type=submit]:disabled:active,
+input[type=button]:disabled:active, input[type=reset]:disabled:active,
+input[type=submit]:disabled:active, input[type=file]:disabled::-ms-browse:active {
+	background-color: transparent;
+	border-color: rgba(255, 255, 255, 0.4);
+	color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 550, _forms.scss */
+.win-ui-light button, .win-ui-light input[type=button], .win-ui-light input[type=submit],
+.win-ui-light input[type=reset], .win-ui-light input[type=file]::-ms-browse {
+	background-color: rgba(182, 182, 182, 0.7);
+	border-color: rgba(0, 0, 0, 0.2);
+	color: black;
+}
+
+/* line 556, _forms.scss */
+.win-ui-light button[type=submit], .win-ui-light input[type=submit] {
+	background-clip: border-box;
+	background-color: #4617b4;
+	border-color: transparent;
+	color: white;
+}
+
+/* line 564, _forms.scss */
+.win-ui-light button:hover, .win-ui-light input[type=button]:hover, .win-ui-light input[type=reset]:hover,
+.win-ui-light input[type=file]::-ms-browse:hover {
+	background-color: rgba(205, 205, 205, 0.82);
+	border-color: rgba(164, 164, 164, 0.45);
+}
+
+/* line 569, _forms.scss */
+.win-ui-light button[type=submit]:hover, .win-ui-light input[type=submit]:hover {
+	background-clip: border-box;
+	background-color: #5f37be;
+	border-color: transparent;
+}
+
+/* line 577, _forms.scss */
+.win-ui-light button:hover:active, .win-ui-light button[type=submit]:hover:active,
+.win-ui-light input[type=button]:hover:active, .win-ui-light input[type=reset]:hover:active,
+.win-ui-light input[type=submit]:hover:active, .win-ui-light input[type=file]::-ms-browse:hover:active {
+	background-clip: border-box;
+	background-color: black;
+	border-color: transparent;
+	color: white;
+}
+
+/* line 586, _forms.scss */
+.win-ui-light button:-ms-keyboard-active, .win-ui-light button[type=submit]:-ms-keyboard-active,
+.win-ui-light input[type=button]:-ms-keyboard-active, .win-ui-light input[type=reset]:-ms-keyboard-active,
+.win-ui-light input[type=submit]:-ms-keyboard-active {
+	background-clip: border-box;
+	background-color: black;
+	border-color: transparent;
+	color: white;
+}
+
+/* line 598, _forms.scss */
+.win-ui-light button:disabled, .win-ui-light button[type=submit]:disabled,
+.win-ui-light input[type=button]:disabled, .win-ui-light input[type=reset]:disabled,
+.win-ui-light input[type=submit]:disabled, .win-ui-light input[type=file]:disabled::-ms-browse,
+.win-ui-light button:disabled:active, .win-ui-light button[type=submit]:disabled:active,
+.win-ui-light input[type=button]:disabled:active, .win-ui-light input[type=reset]:disabled:active,
+.win-ui-light input[type=submit]:disabled:active, .win-ui-light input[type=file]:disabled::-ms-browse:active {
+	background-color: rgba(202, 202, 202, 0.4);
+	border-color: rgba(0, 0, 0, 0.08);
+	color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 604, _forms.scss */
+.win-ui-light input[type=file]:disabled::-ms-browse, .win-ui-light input[type=file]:disabled::-ms-browse:active {
+	border-color: rgba(0, 0, 0, 0.15);
+}
+
+/*
+File upload control colors.
+*/
+/* line 611, _forms.scss */
+input[type=file] {
+	background-color: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+
+/*Grid*/
+/*Type*/
+/* Transitions*/
+/* =============================================================================
+Colours
+========================================================================== */
+/* =============================================================================
+shadow
+========================================================================== */
+/* =============================================================================
+Buttons
+========================================================================== */
+/* =============================================================================
+Borders
+========================================================================== */
+/**
+ * Non-semantic helper classes: please define your styles before this section.
+ */
+/* For image replacement */
+/* line 8, _helpers.scss */
+.ir {
+	display: block;
+	text-indent: -99in;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+}
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+/* line 19, _helpers.scss */
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+/* line 26, _helpers.scss */
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+/* line 39, _helpers.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 49, _helpers.scss */
+.invisible {
+	visibility: hidden;
+}
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations.
+   nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 56, _helpers.scss */
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+/* line 61, _helpers.scss */
+.clearfix:after {
+	clear: both;
+}
+
+/* line 65, _helpers.scss */
+.clearfix {
+	zoom: 1;
+}
+
+/* line 69, _helpers.scss */
+.centred {
+	text-align: center;
+}
+
+/* line 73, _helpers.scss */
+.pie-element {
+	behavior: url("/css/PIE.htc");
+	position: relative;
+}
+
+/* line 87, _helpers.scss */
+.pie-container {
+	z-index: 0;
+	position: relative;
+}
+
+/*
+Rating control.
+*/
+/* line 5, _controls.scss */
+.win-rating {
+	display: -ms-inline-flexbox;
+	height: auto;
+	width: auto;
+	white-space: normal;
+	-ms-flex-align: stretch;
+	-ms-flex-pack: center;
+}
+
+/* line 14, _controls.scss */
+.win-rating .win-star {
+	-ms-flex: 1 1 auto;
+	height: 28px;
+	width: 28px;
+	padding: 0 6px;
+	font-family: "Segoe UI Symbol";
+	font-size: 28px;
+	overflow: hidden;
+	text-indent: 0;
+	line-height: 1;
+	cursor: default;
+	position: relative;
+	letter-spacing: 0;
+	/* Use letter-spacing: 0 to make average star look like one glyph. */
+	-ms-touch-action: none;
+}
+
+/* line 30, _controls.scss */
+.win-rating.win-small .win-star {
+	width: 14px;
+	height: 14px;
+	font-size: 14px;
+	padding: 0 3px;
+}
+
+/* line 37, _controls.scss */
+.win-rating .win-star:before {
+	content: "\E082";
+}
+
+/* line 41, _controls.scss */
+.win-rating .win-star.win-disabled {
+	cursor: default;
+	-ms-touch-action: auto;
+}
+
+/*
+DatePicker control.
+*/
+/* line 49, _controls.scss */
+.win-datepicker {
+	display: -ms-inline-flexbox;
+	height: auto;
+	width: auto;
+}
+
+/* line 55, _controls.scss */
+.win-datepicker .win-datepicker-month {
+	margin-right: 20px;
+}
+
+/* line 60, _controls.scss */
+.win-datepicker .win-datepicker-date.win-order0,
+.win-datepicker .win-datepicker-date.win-order1 {
+	margin-right: 20px;
+}
+
+/* line 64, _controls.scss */
+.win-datepicker .win-datepicker-year.win-order0 {
+	margin-right: 20px;
+}
+
+/* line 68, _controls.scss */
+.win-datepicker .win-datepicker-month:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-right: 0;
+	margin-left: 20px;
+}
+
+/* line 74, _controls.scss */
+.win-datepicker .win-datepicker-date.win-order0:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm),
+.win-datepicker .win-datepicker-date.win-order1:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-right: 0;
+	margin-left: 20px;
+}
+
+/* line 79, _controls.scss */
+.win-datepicker .win-datepicker-year.win-order0:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-right: 0;
+	margin-left: 20px;
+}
+
+/*
+TimePicker control.
+*/
+/* line 87, _controls.scss */
+.win-timepicker {
+	display: -ms-inline-flexbox;
+	height: auto;
+	width: auto;
+}
+
+/* line 93, _controls.scss */
+.win-timepicker .win-timepicker-hour {
+	margin-right: 20px;
+}
+
+/* line 97, _controls.scss */
+.win-timepicker .win-timepicker-period.win-order0 {
+	margin-right: 20px;
+}
+
+/* line 101, _controls.scss */
+.win-timepicker .win-timepicker-minute.win-order1 {
+	margin-right: 20px;
+}
+
+/* line 105, _controls.scss */
+.win-timepicker .win-timepicker-period.win-order0:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-right: 0;
+	margin-left: 20px;
+}
+
+/* line 111, _controls.scss */
+.win-timepicker .win-timepicker-minute.win-order1:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm),
+.win-timepicker .win-timepicker-minute.win-order0:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+/* line 116, _controls.scss */
+.win-timepicker .win-timepicker-hour:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-right: 0;
+	margin-left: 20px;
+}
+
+/*
+Toggle control.
+*/
+/* line 124, _controls.scss */
+.win-toggleswitch {
+	padding: 0;
+	background-color: transparent;
+	vertical-align: top;
+	margin: 0;
+	display: block;
+}
+
+/* line 132, _controls.scss */
+.win-toggleswitch .win-switch {
+	display: inline-block;
+	height: 19px;
+	width: 50px;
+	padding: 5px;
+	margin: 0;
+	background-color: transparent;
+	-ms-grid-column: 2;
+}
+
+/* line 142, _controls.scss */
+.win-toggleswitch .win-switch::-ms-tooltip {
+	display: none;
+}
+
+/* line 147, _controls.scss */
+.win-toggleswitch .win-switch::-ms-ticks-before,
+.win-toggleswitch .win-switch::-ms-ticks-after {
+	display: none;
+}
+
+/* line 151, _controls.scss */
+.win-toggleswitch .win-switch::-ms-track {
+	height: 15px;
+	/* 19px - 2px borders */
+	width: 46px;
+	padding: 0;
+	margin: 0;
+	border-width: 2px;
+	border-style: solid;
+}
+
+/* line 161, _controls.scss */
+.win-toggleswitch .win-switch::-ms-fill-lower,
+.win-toggleswitch .win-switch::-ms-fill-upper {
+	height: 13px;
+	/* 19px - 2px borders - 1px margins */
+	padding: 0;
+}
+
+/* line 166, _controls.scss */
+.win-toggleswitch .win-switch::-ms-fill-lower {
+	margin-left: 1px;
+}
+
+/* line 170, _controls.scss */
+.win-toggleswitch .win-switch:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-fill-lower {
+	margin-left: 0;
+	margin-right: 1px;
+}
+
+/* line 175, _controls.scss */
+.win-toggleswitch .win-switch::-ms-fill-upper {
+	margin-right: 1px;
+}
+
+/* line 179, _controls.scss */
+.win-toggleswitch .win-switch:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::-ms-fill-upper {
+	margin-right: 0;
+	margin-left: 1px;
+}
+
+/* line 184, _controls.scss */
+.win-toggleswitch .win-switch::-ms-thumb {
+	height: 19px;
+	width: 12px;
+}
+
+/* line 189, _controls.scss */
+.win-toggleswitch .win-title {
+	display: block;
+	vertical-align: top;
+	max-width: 470px;
+	font-size: 11pt;
+	font-weight: 300;
+	line-height: 1.3636;
+	/* 20px when font-size is 11pt */
+}
+
+/* line 198, _controls.scss */
+.win-toggleswitch .win-label {
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px 20px 5px 0px;
+	min-width: 65px;
+	direction: inherit;
+	-ms-grid-column: 1;
+	-ms-grid-row: 1;
+	font-size: 11pt;
+	font-weight: 600;
+	line-height: 1.3636;
+	/* 20px when font-size is 11pt */
+}
+
+/* line 211, _controls.scss */
+.win-toggleswitch .win-label:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	padding: 5px 0px 5px 20px;
+}
+
+/* line 215, _controls.scss */
+.win-toggleswitch .win-label.win-hidden {
+	visibility: hidden;
+}
+
+/* line 219, _controls.scss */
+.win-focus-hide {
+	outline: none;
+}
+
+/*
+Tooltip control.
+*/
+/* line 226, _controls.scss */
+.win-tooltip {
+	display: block;
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	max-width: 380px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 6px 10px 7px 10px;
+	border-style: solid;
+	border-width: 2px;
+	z-index: 9999;
+	word-wrap: break-word;
+	animation-fill-mode: both;
+	font-size: 9pt;
+	font-weight: 400;
+	line-height: 1.6667;
+	/* 20px when font-size is 9pt */
+}
+
+/* line 245, _controls.scss */
+.win-tooltip-phantom {
+	display: block;
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	background-color: transparent;
+	border-width: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* line 256, _controls.scss */
+.win-viewbox {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+/* line 262, _controls.scss */
+.win-semanticzoom {
+	height: 400px;
+	-ms-touch-action: pan-x pan-y double-tap-zoom;
+}
+
+/* line 267, _controls.scss */
+.win-semanticzoom * {
+	-ms-touch-action: inherit;
+}
+
+/* line 271, _controls.scss */
+.win-semanticzoom-button {
+	z-index: 100;
+	position: absolute;
+	min-width: 25px;
+	min-height: 25px;
+	width: 25px;
+	height: 25px;
+	padding: 0px;
+	bottom: 21px;
+	-ms-touch-action: none;
+}
+
+/* line 283, _controls.scss */
+.win-semanticzoom-button::before {
+	font-family: "Segoe UI Symbol";
+	font-weight: normal;
+	font-size: 11pt;
+	content: "\E0B8";
+	/* minus sign */
+}
+
+/* line 290, _controls.scss */
+.win-semanticzoom-button-location.rtl {
+	left: 4px;
+}
+
+/* line 294, _controls.scss */
+.win-semanticzoom-button-location.ltr {
+	right: 4px;
+}
+
+/*
+ScrollView control.
+*/
+/* line 301, _controls.scss */
+.win-scrollview {
+	overflow-x: auto;
+	overflow-y: hidden;
+	height: 400px;
+	width: 100%;
+}
+
+/*
+ListView control.
+*/
+/* line 311, _controls.scss */
+.win-listview {
+	overflow: hidden;
+	height: 400px;
+}
+
+/* line 316, _controls.scss */
+.win-listview .win-backdrop {
+	position: absolute;
+}
+
+/* line 320, _controls.scss */
+.win-listview .win-surface {
+	position: relative;
+	overflow: visible;
+	width: 100%;
+	height: 100%;
+}
+
+/* line 327, _controls.scss */
+.win-listview > .win-viewport {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+/* line 334, _controls.scss */
+.win-listview > .win-viewport.win-horizontal {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+/* line 339, _controls.scss */
+.win-listview > .win-viewport.win-vertical {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/* line 344, _controls.scss */
+.win-listview > .win-horizontal .win-container {
+	margin: 5px;
+}
+
+/* line 348, _controls.scss */
+.win-listview > .win-vertical .win-container {
+	margin: 5px 24px 5px 7px;
+}
+
+/* line 352, _controls.scss */
+.win-listview.win-rtl > .win-vertical .win-container {
+	margin: 5px 7px 5px 24px;
+}
+
+/* line 356, _controls.scss */
+.win-listview .win-container {
+	cursor: default;
+	position: absolute;
+	z-index: 0;
+}
+
+/* line 362, _controls.scss */
+.win-listview .win-container.win-swipe {
+	z-index: 1;
+}
+
+/* line 366, _controls.scss */
+.win-listview.win-swipeable .win-horizontal .win-container {
+	-ms-touch-action: pan-x pinch-zoom double-tap-zoom;
+}
+
+/* line 370, _controls.scss */
+.win-listview.win-swipeable .win-vertical .win-container {
+	-ms-touch-action: pan-y pinch-zoom double-tap-zoom;
+}
+
+/* line 374, _controls.scss */
+.win-semanticzoom .win-listview > .win-viewport * {
+	-ms-touch-action: auto;
+}
+
+/* line 378, _controls.scss */
+.win-semanticzoom .win-listview > .win-viewport.win-zooming-x {
+	overflow-x: visible;
+}
+
+/* line 382, _controls.scss */
+.win-semanticzoom .win-listview > .win-viewport.win-zooming-y {
+	overflow-y: visible;
+}
+
+/* line 386, _controls.scss */
+.win-listview .win-item {
+	/* Used to place above .win-selectionbackground in ListView */
+	z-index: 1;
+}
+
+/* line 391, _controls.scss */
+.win-listview .win-item {
+	overflow: hidden;
+	position: absolute;
+}
+
+/* line 396, _controls.scss */
+.win-listview > .win-vertical .win-item {
+	/* Allow flex box to fill win-item in list layout */
+	width: 100%;
+}
+
+/* line 401, _controls.scss */
+.win-listview .win-item:focus {
+	outline-style: none;
+}
+
+/* line 405, _controls.scss */
+.win-listview .win-focusedoutline {
+	width: calc(100% +4px);
+	height: calc(100% +4px);
+	left: -2px;
+	top: -2px;
+	position: absolute;
+	z-index: 5;
+}
+
+/* line 414, _controls.scss */
+.win-container.win-selected .win-selectionborder {
+	border-width: 4px;
+	border-style: solid;
+}
+
+/* line 419, _controls.scss */
+.win-container.win-selected:hover .win-selectionborder {
+	border-width: 4px;
+	border-style: solid;
+}
+
+/* line 424, _controls.scss */
+.win-listview .win-groupheader {
+	position: absolute;
+	top: 0;
+	padding: 10px 10px 10px 2px;
+	cursor: default;
+	overflow: hidden;
+	margin-left: 70px;
+	font-size: 20pt;
+	font-weight: 200;
+	line-height: 1.2;
+	/* 32px when font-size is 20pt */
+}
+
+/* line 436, _controls.scss */
+.win-listview.win-rtl .win-groupheader {
+	margin-left: 0;
+	margin-right: 70px;
+	padding-left: 10px;
+	padding-right: 2px;
+}
+
+/* line 443, _controls.scss */
+.win-listview.win-groups > .win-horizontal .win-surface {
+	margin-left: -70px;
+}
+
+/* line 447, _controls.scss */
+.win-listview.win-groups.win-rtl > .win-horizontal .win-surface {
+	margin-left: 0;
+	margin-right: -70px;
+}
+
+/* line 452, _controls.scss */
+.win-surface ._win-proxy {
+	position: absolute;
+	width: 0;
+	height: 0;
+	-ms-touch-action: none;
+}
+
+/* line 459, _controls.scss */
+.win-selectionborder {
+	position: absolute;
+	opacity: inherit;
+	z-index: 2;
+}
+
+/* line 465, _controls.scss */
+.win-container.win-selected .win-selectionbordertop {
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 0;
+	border-right-style: hidden !important;
+	border-bottom-style: hidden !important;
+	border-left-style: hidden !important;
+}
+
+/* line 475, _controls.scss */
+.win-container.win-selected .win-selectionborderright {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	border-top-style: hidden !important;
+	border-bottom-style: hidden !important;
+	border-left-style: hidden !important;
+}
+
+/* line 485, _controls.scss */
+.win-container.win-selected .win-selectionborderbottom {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 0;
+	border-top-style: hidden !important;
+	border-right-style: hidden !important;
+	border-left-style: hidden !important;
+}
+
+/* line 495, _controls.scss */
+.win-container.win-selected .win-selectionborderleft {
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	border-top-style: hidden !important;
+	border-right-style: hidden !important;
+	border-bottom-style: hidden !important;
+}
+
+/* line 505, _controls.scss */
+.win-selectionbackground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	/* Used to place behind .win-item in the ListView */
+	z-index: 0;
+}
+
+/* line 515, _controls.scss */
+.win-selectioncheckmarkbackground {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	border-width: 20px;
+	border-style: solid;
+	z-index: 3;
+}
+
+/* line 528, _controls.scss */
+.win-listview.win-rtl .win-selectioncheckmarkbackground {
+	left: 0;
+	right: auto;
+}
+
+/* line 533, _controls.scss */
+.win-selectioncheckmark {
+	position: absolute;
+	margin: 0;
+	padding: 2px;
+	right: 0;
+	top: 0;
+	font-family: Segoe UI Symbol;
+	font-size: 11pt;
+	z-index: 4;
+}
+
+/* line 544, _controls.scss */
+.win-listview.win-rtl .win-selectioncheckmark {
+	left: 0;
+	right: auto;
+}
+
+/* line 549, _controls.scss */
+.win-selectionhint {
+	position: absolute;
+	margin: 0;
+	padding: 2px;
+	right: 0;
+	font-family: Segoe UI Symbol;
+	font-size: 11pt;
+	opacity: 0.5;
+}
+
+/* line 559, _controls.scss */
+.win-selectionhint.win-revealed {
+	opacity: 1;
+}
+
+/* line 563, _controls.scss */
+.win-listview.win-rtl .win-selectionhint {
+	left: 0;
+	right: auto;
+}
+
+/* line 568, _controls.scss */
+.win-listview .win-progress {
+	left: 50%;
+	top: 50%;
+	width: 60px;
+	height: 60px;
+	margin-left: -30px;
+	margin-top: -30px;
+	z-index: 1;
+	position: absolute;
+}
+
+/* line 579, _controls.scss */
+.win-listview .win-progress::-ms-fill {
+	animation-name: -ms-ring;
+}
+
+/*
+FlipView control.
+*/
+/* line 586, _controls.scss */
+.win-flipview {
+	overflow: hidden;
+	height: 400px;
+}
+
+/* line 591, _controls.scss */
+.win-flipview .win-surface {
+	-ms-scroll-chaining: none;
+}
+
+/* line 595, _controls.scss */
+.win-flipview .win-navleft {
+	left: 0%;
+	top: 50%;
+	margin-top: -19px;
+}
+
+/* line 601, _controls.scss */
+.win-flipview .win-navright {
+	left: 100%;
+	top: 50%;
+	margin-left: -69px;
+	margin-top: -19px;
+}
+
+/* line 608, _controls.scss */
+.win-flipview .win-navtop {
+	left: 50%;
+	top: 0%;
+	margin-left: -35px;
+}
+
+/* line 614, _controls.scss */
+.win-flipview .win-navbottom {
+	left: 50%;
+	top: 100%;
+	margin-left: -35px;
+	margin-top: -39px;
+}
+
+/* line 621, _controls.scss */
+.win-flipview .win-navbutton {
+	border: none;
+	width: 69px;
+	height: 39px;
+	z-index: 1;
+	position: absolute;
+	font-family: "Segoe UI Symbol";
+	font-size: 16pt;
+	padding: 0;
+	min-width: 0;
+}
+
+/* line 633, _controls.scss */
+.win-flipview .win-item, .win-flipview .win-item > .win-template {
+	display: -ms-flexbox;
+	height: 100%;
+	width: 100%;
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
+}
+
+/*
+Range control colors.
+*/
+/* line 644, _controls.scss */
+input[type=range], input[type=range]::-ms-track {
+	background-color: transparent;
+}
+
+/* line 648, _controls.scss */
+input[type=range]::-ms-fill-lower {
+	background-color: #5b2ec5;
+}
+
+/* line 652, _controls.scss */
+input[type=range]:hover::-ms-fill-lower {
+	background-color: #724bcd;
+}
+
+/* line 656, _controls.scss */
+input[type=range]:active::-ms-fill-lower {
+	background-color: #8152ef;
+}
+
+/* line 660, _controls.scss */
+input[type=range]:disabled::-ms-fill-lower {
+	background-color: rgba(255, 255, 255, 0.23);
+}
+
+/* line 664, _controls.scss */
+.win-ui-light input[type=range]::-ms-fill-lower {
+	background-color: #4617b4;
+}
+
+/* line 668, _controls.scss */
+.win-ui-light input[type=range]:hover::-ms-fill-lower {
+	background-color: #5f37be;
+}
+
+/* line 672, _controls.scss */
+.win-ui-light input[type=range]:active::-ms-fill-lower {
+	background-color: #7241e4;
+}
+
+/* line 676, _controls.scss */
+.win-ui-light input[type=range]:disabled::-ms-fill-lower {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 680, _controls.scss */
+input[type=range]::-ms-fill-upper {
+	background-color: rgba(255, 255, 255, 0.16);
+}
+
+/* line 684, _controls.scss */
+input[type=range]:hover::-ms-fill-upper {
+	background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* line 688, _controls.scss */
+input[type=range]:active::-ms-fill-upper {
+	background-color: rgba(255, 255, 255, 0.23);
+}
+
+/* line 692, _controls.scss */
+input[type=range]:disabled::-ms-fill-upper {
+	background-color: rgba(255, 255, 255, 0.16);
+}
+
+/* line 696, _controls.scss */
+.win-ui-light input[type=range]::-ms-fill-upper {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* line 700, _controls.scss */
+.win-ui-light input[type=range]:hover::-ms-fill-upper {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* line 704, _controls.scss */
+.win-ui-light input[type=range]:active::-ms-fill-upper {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 708, _controls.scss */
+.win-ui-light input[type=range]:disabled::-ms-fill-upper {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* line 712, _controls.scss */
+input[type=range]::-ms-thumb {
+	background-color: white;
+}
+
+/* line 716, _controls.scss */
+input[type=range]:disabled::-ms-thumb {
+	background-color: #7e7e7e;
+}
+
+/* line 720, _controls.scss */
+.win-ui-light input[type=range]::-ms-thumb {
+	background-color: black;
+}
+
+/* line 724, _controls.scss */
+.win-ui-light input[type=range]:disabled::-ms-thumb {
+	background-color: #929292;
+}
+
+/* line 729, _controls.scss */
+input[type=range]::-ms-ticks-before,
+input[type=range]::-ms-ticks-after {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 734, _controls.scss */
+.win-ui-light input[type=range]::-ms-ticks-before,
+.win-ui-light input[type=range]::-ms-ticks-after {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+/*
+FlipView control colors.
+*/
+/* line 741, _controls.scss */
+.win-flipview .win-navbutton {
+	background-color: rgba(213, 213, 213, 0.35);
+	color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 746, _controls.scss */
+.win-flipview .win-navbutton:hover {
+	background-color: rgba(215, 215, 215, 0.94);
+	color: black;
+}
+
+/* line 751, _controls.scss */
+.win-flipview .win-navbutton:hover:active {
+	background-color: rgba(41, 41, 41, 0.74);
+	color: white;
+}
+
+/*
+ListView control colors.
+*/
+/* line 759, _controls.scss */
+.win-listview .win-container:not(.win-footprint) {
+	background-color: #1d1d1d;
+}
+
+/* line 763, _controls.scss */
+.win-ui-light .win-listview .win-container:not(.win-footprint) {
+	background-color: white;
+}
+
+/* line 767, _controls.scss */
+.win-listview .win-container:hover {
+	outline: rgba(255, 255, 255, 0.3) solid 3px;
+}
+
+/* line 771, _controls.scss */
+.win-listview.win-selectionstylefilled .win-container:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* line 775, _controls.scss */
+.win-listview .win-focusedoutline {
+	outline: white solid 2px;
+}
+
+/* line 779, _controls.scss */
+.win-ui-light .win-listview .win-container:hover {
+	outline: rgba(0, 0, 0, 0.3) solid 3px;
+}
+
+/* line 783, _controls.scss */
+.win-ui-light .win-listview.win-selectionstylefilled .win-container:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 787, _controls.scss */
+.win-ui-light .win-listview .win-focusedoutline {
+	outline: black solid 2px;
+}
+
+/* line 791, _controls.scss */
+.win-listview.win-selectionstylefilled .win-container.win-selected:hover {
+	background-color: #5f37be;
+}
+
+/* line 795, _controls.scss */
+.win-listview .win-container.win-swipe:hover {
+	background-color: #1d1d1d;
+	outline: none;
+}
+
+/* line 800, _controls.scss */
+.win-ui-light .win-listview .win-container.win-swipe:hover {
+	background-color: white;
+	outline: none;
+}
+
+/* line 805, _controls.scss */
+.win-listview.win-selectionstylefilled .win-selected {
+	color: white;
+}
+
+/* line 809, _controls.scss */
+.win-listview:not(.win-selectionstylefilled) .win-container.win-selected .win-selectionborder {
+	border-color: #4617b4;
+}
+
+/* line 813, _controls.scss */
+.win-listview.win-selectionstylefilled .win-container.win-selected .win-selectionborder {
+	border-color: transparent;
+}
+
+/* line 817, _controls.scss */
+.win-listview:not(.win-selectionstylefilled) .win-container.win-selected:hover .win-selectionborder {
+	border-color: #5f37be;
+}
+
+/* line 821, _controls.scss */
+.win-listview.win-selectionstylefilled .win-selected .win-selectionbackground {
+	background-color: #4617b4;
+}
+
+/* line 825, _controls.scss */
+.win-listview.win-selectionstylefilled .win-selected:hover .win-selectionbackground {
+	background-color: #5f37be;
+}
+
+/* line 829, _controls.scss */
+.win-selectioncheckmark {
+	color: white;
+}
+
+/* line 833, _controls.scss */
+.win-selectionhint {
+	color: white;
+}
+
+/* line 837, _controls.scss */
+.win-ui-light .win-selectionhint {
+	color: #4617b4;
+}
+
+/* line 841, _controls.scss */
+.win-listview:not(.win-selectionstylefilled) .win-selectioncheckmarkbackground {
+	border-top-color: #4617b4;
+	border-right-color: #4617b4;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+}
+
+/* line 848, _controls.scss */
+.win-listview.win-selectionstylefilled .win-selectioncheckmarkbackground {
+	border-color: transparent;
+}
+
+/* line 852, _controls.scss */
+.win-listview:not(.win-selectionstylefilled) .win-container.win-selected:hover .win-selectioncheckmarkbackground {
+	border-top-color: #5f37be;
+	border-right-color: #5f37be;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+}
+
+/* line 859, _controls.scss */
+.win-listview.win-rtl:not(.win-selectionstylefilled) .win-selectioncheckmarkbackground {
+	border-left-color: #4617b4;
+	border-right-color: transparent;
+}
+
+/* line 864, _controls.scss */
+.win-listview.win-rtl:not(.win-selectionstylefilled) .win-container.win-selected:hover .win-selectioncheckmarkbackground {
+	border-left-color: #5f37be;
+	border-right-color: transparent;
+}
+
+/* line 871, _controls.scss */
+.win-listview.win-selectionstylefilled .win-selected a,
+.win-listview.win-selectionstylefilled .win-selected progress,
+.win-listview.win-selectionstylefilled .win-selected .win-rating .win-star.win-full {
+	color: white;
+}
+
+/* line 875, _controls.scss */
+.win-listview.win-selectionstylefilled .win-selected a:hover:active {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 879, _controls.scss */
+.win-listview.win-selectionstylefilled .win-selected a:hover {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 896, _controls.scss */
+.win-listview.win-selectionstylefilled .win-selected button,
+.win-listview.win-selectionstylefilled .win-selected input[type=button],
+.win-listview.win-selectionstylefilled .win-selected input[type=reset],
+.win-listview.win-selectionstylefilled .win-selected input[type=text],
+.win-listview.win-selectionstylefilled .win-selected input[type=password],
+.win-listview.win-selectionstylefilled .win-selected input[type=email],
+.win-listview.win-selectionstylefilled .win-selected input[type=number],
+.win-listview.win-selectionstylefilled .win-selected input[type=tel],
+.win-listview.win-selectionstylefilled .win-selected input[type=url],
+.win-listview.win-selectionstylefilled .win-selected input[type=search],
+.win-listview.win-selectionstylefilled .win-selected input::-ms-check,
+.win-listview.win-selectionstylefilled .win-selected textarea,
+.win-listview.win-selectionstylefilled .win-selected .win-textarea,
+.win-listview.win-selectionstylefilled .win-selected select {
+	background-clip: border-box;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-color: transparent;
+	color: black;
+}
+
+/* line 904, _controls.scss */
+.win-listview.win-selectionstylefilled .win-selected button[type=submit],
+.win-listview.win-selectionstylefilled .win-selected input[type=submit] {
+	border-color: white;
+}
+
+/* line 908, _controls.scss */
+.win-listview.win-selectionstylefilled .win-selected input[type=range]::-ms-fill-lower {
+	background-color: white;
+}
+
+/* line 912, _controls.scss */
+.win-listview.win-selectionstylefilled .win-selected input[type=range]::-ms-thumb {
+	background-color: black;
+}
+
+/* line 917, _controls.scss */
+.win-listview.win-selectionstylefilled .win-selected input[type=range]::-ms-fill-upper,
+.win-listview.win-selectionstylefilled .win-selected progress {
+	background-color: rgba(255, 255, 255, 0.16);
+}
+
+/* line 921, _controls.scss */
+.win-listview.win-selectionstylefilled .win-selected progress:indeterminate {
+	background-color: transparent;
+}
+
+/* line 925, _controls.scss */
+.win-listview.win-selectionstylefilled .win-selected .win-rating .win-star.win-empty {
+	color: rgba(255, 255, 255, 0.16);
+}
+
+/*
+Back button control colors.
+*/
+/* line 932, _controls.scss */
+.win-backbutton {
+	background-color: transparent;
+	border-color: white;
+	color: white;
+}
+
+/* line 938, _controls.scss */
+.win-backbutton:hover {
+	background-color: rgba(255, 255, 255, 0.13);
+	border-color: white;
+}
+
+/* line 943, _controls.scss */
+.win-backbutton:hover:active {
+	background-color: white;
+	border-color: white;
+	color: black;
+}
+
+/* line 949, _controls.scss */
+.win-backbutton:-ms-keyboard-active {
+	background-color: white;
+	border-color: white;
+	color: black;
+}
+
+/* line 955, _controls.scss */
+.win-backbutton:disabled, .win-backbutton:disabled:active {
+	background-clip: padding-box;
+	background-color: transparent;
+	border-color: rgba(255, 255, 255, 0.4);
+	color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 962, _controls.scss */
+.win-ui-light .win-backbutton {
+	background-color: transparent;
+	border-color: black;
+	color: black;
+}
+
+/* line 968, _controls.scss */
+.win-ui-light .win-backbutton:hover {
+	background-color: rgba(0, 0, 0, 0.13);
+	border-color: black;
+}
+
+/* line 973, _controls.scss */
+.win-ui-light .win-backbutton:hover:active {
+	background-color: black;
+	border-color: black;
+	color: white;
+}
+
+/* line 979, _controls.scss */
+.win-ui-light .win-backbutton:-ms-keyboard-active {
+	background-color: black;
+	border-color: black;
+	color: white;
+}
+
+/* line 985, _controls.scss */
+.win-ui-light .win-backbutton:disabled, .win-ui-light .win-backbutton:disabled:active {
+	background-clip: padding-box;
+	background-color: transparent;
+	border-color: rgba(0, 0, 0, 0.4);
+	color: rgba(0, 0, 0, 0.4);
+}
+
+/*
+Command button colors.
+*/
+/* line 995, _controls.scss */
+button.win-command {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+/* line 1000, _controls.scss */
+button.win-command:hover {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+/* line 1005, _controls.scss */
+button.win-command:active {
+	background-color: transparent;
+	color: inherit;
+}
+
+/* line 1010, _controls.scss */
+button.win-command:hover:active {
+	background-color: transparent;
+	color: inherit;
+}
+
+/* line 1015, _controls.scss */
+button.win-command:-ms-keyboard-active {
+	background-color: transparent;
+	color: inherit;
+}
+
+/* line 1020, _controls.scss */
+button.win-command:disabled {
+	border-color: transparent;
+	background-color: transparent;
+}
+
+/* line 1025, _controls.scss */
+button.win-command:focus {
+	border-color: white;
+}
+
+/* line 1029, _controls.scss */
+.win-ui-light button.win-command:focus {
+	border-color: black;
+}
+
+/* line 1033, _controls.scss */
+.win-hidefocus:focus {
+	outline: none;
+}
+
+/*
+    win-hide-focus needs the qualifier for win-ui-light or dark,
+    otherwise .win-ui-dark button.win-command:focus is more
+    qualified and stomps on the transparent that doesn't have .win-ui-dark
+*/
+/* line 1043, _controls.scss */
+.win-command.win-hidefocus:focus,
+.win-ui-light .win-command.win-hidefocus:focus {
+	border-color: transparent;
+}
+
+/* line 1047, _controls.scss */
+.win-commandimage {
+	color: white;
+}
+
+/* line 1051, _controls.scss */
+button:hover:active .win-commandimage {
+	color: black;
+}
+
+/* line 1055, _controls.scss */
+button:-ms-keyboard-active .win-commandimage {
+	color: black;
+}
+
+/* line 1060, _controls.scss */
+button:disabled .win-commandimage,
+button:disabled:active .win-commandimage {
+	color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 1065, _controls.scss */
+button[aria-checked=true] .win-commandimage,
+button[aria-checked=true]:active .win-commandimage {
+	color: black;
+}
+
+/* line 1069, _controls.scss */
+button[aria-checked=true]:hover .win-commandimage {
+	color: black;
+}
+
+/* line 1073, _controls.scss */
+button[aria-checked=true]:hover:active .win-commandimage {
+	color: white;
+}
+
+/* line 1077, _controls.scss */
+button[aria-checked=true]:-ms-keyboard-active .win-commandimage {
+	color: white;
+}
+
+/* line 1082, _controls.scss */
+button[aria-checked=true]:disabled .win-commandimage,
+button[aria-checked=true]:disabled:active .win-commandimage {
+	color: black;
+}
+
+/* line 1086, _controls.scss */
+.win-ui-light .win-commandimage {
+	color: black;
+}
+
+/* line 1090, _controls.scss */
+.win-ui-light button:hover:active .win-commandimage {
+	color: white;
+}
+
+/* line 1094, _controls.scss */
+.win-ui-light button:-ms-keyboard-active .win-commandimage {
+	color: white;
+}
+
+/* line 1099, _controls.scss */
+.win-ui-light button:disabled .win-commandimage,
+.win-ui-light button:disabled:active .win-commandimage {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 1104, _controls.scss */
+.win-ui-light button[aria-checked=true] .win-commandimage,
+.win-ui-light button[aria-checked=true]:active .win-commandimage {
+	color: white;
+}
+
+/* line 1108, _controls.scss */
+.win-ui-light button[aria-checked=true]:hover .win-commandimage {
+	color: white;
+}
+
+/* line 1112, _controls.scss */
+.win-ui-light button[aria-checked=true]:hover:active .win-commandimage {
+	color: black;
+}
+
+/* line 1116, _controls.scss */
+.win-ui-light button[aria-checked=true]:-ms-keyboard-active .win-commandimage {
+	color: black;
+}
+
+/* line 1121, _controls.scss */
+.win-ui-light button[aria-checked=true]:disabled .win-commandimage,
+.win-ui-light button[aria-checked=true]:disabled:active .win-commandimage {
+	color: white;
+}
+
+/*
+Command ring colors.
+*/
+/* line 1128, _controls.scss */
+.win-commandring, button:active .win-commandring {
+	background-color: transparent;
+	border-color: white;
+}
+
+/* line 1133, _controls.scss */
+button:hover .win-commandring {
+	background-color: rgba(255, 255, 255, 0.13);
+	border-color: white;
+}
+
+/* line 1138, _controls.scss */
+button:hover:active .win-commandring {
+	background-color: white;
+	border-color: white;
+}
+
+/* line 1143, _controls.scss */
+button:-ms-keyboard-active .win-commandring {
+	background-color: white;
+	border-color: white;
+}
+
+/* line 1149, _controls.scss */
+button:disabled .win-commandring,
+button:disabled:active .win-commandring {
+	background-color: transparent;
+	border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 1155, _controls.scss */
+button[aria-checked=true] .win-commandring,
+button[aria-checked=true]:active .win-commandring {
+	background-color: white;
+	border-color: white;
+}
+
+/* line 1160, _controls.scss */
+button[aria-checked=true]:hover .win-commandring {
+	background-color: #dedede;
+	border-color: #dedede;
+}
+
+/* line 1165, _controls.scss */
+button[aria-checked=true]:hover:active .win-commandring {
+	background-color: transparent;
+	border-color: white;
+}
+
+/* line 1170, _controls.scss */
+button[aria-checked=true]:-ms-keyboard-active .win-commandring {
+	background-color: transparent;
+	border-color: white;
+}
+
+/* line 1176, _controls.scss */
+button[aria-checked=true]:disabled .win-commandring,
+button[aria-checked=true]:disabled:active .win-commandring {
+	background-color: rgba(255, 255, 255, 0.4);
+	border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 1181, _controls.scss */
+.win-ui-light .win-commandring, .win-ui-light button:active .win-commandring {
+	background-color: transparent;
+	border-color: black;
+}
+
+/* line 1186, _controls.scss */
+.win-ui-light button:hover .win-commandring {
+	background-color: rgba(0, 0, 0, 0.13);
+	border-color: black;
+}
+
+/* line 1191, _controls.scss */
+.win-ui-light button:hover:active .win-commandring {
+	background-color: black;
+	border-color: black;
+}
+
+/* line 1196, _controls.scss */
+.win-ui-light button:-ms-keyboard-active .win-commandring {
+	background-color: black;
+	border-color: black;
+}
+
+/* line 1202, _controls.scss */
+.win-ui-light button:disabled .win-commandring,
+.win-ui-light button:disabled:active .win-commandring {
+	background-color: transparent;
+	border-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 1208, _controls.scss */
+.win-ui-light button[aria-checked=true] .win-commandring,
+.win-ui-light button[aria-checked=true]:active .win-commandring {
+	background-color: black;
+	border-color: black;
+}
+
+/* line 1213, _controls.scss */
+.win-ui-light button[aria-checked=true]:hover .win-commandring {
+	background-color: #212121;
+	border-color: #212121;
+}
+
+/* line 1218, _controls.scss */
+.win-ui-light button[aria-checked=true]:hover:active .win-commandring {
+	background-color: transparent;
+	border-color: black;
+}
+
+/* line 1223, _controls.scss */
+.win-ui-light button[aria-checked=true]:-ms-keyboard-active .win-commandring {
+	background-color: transparent;
+	border-color: black;
+}
+
+/* line 1229, _controls.scss */
+.win-ui-light button[aria-checked=true]:disabled .win-commandring,
+.win-ui-light button[aria-checked=true]:disabled:active .win-commandring {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-color: rgba(0, 0, 0, 0.4);
+}
+
+/*
+Command button labels colors.
+*/
+/* line 1238, _controls.scss */
+button.win-command:disabled .win-label,
+button.win-command:disabled:active .win-label {
+	color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 1243, _controls.scss */
+.win-ui-light button.win-command:disabled .win-label,
+.win-ui-light button.win-command:disabled:active .win-label {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+/*
+AppBarCommand (and MenuCommand) separator.
+*/
+/* line 1250, _controls.scss */
+hr.win-command {
+	/* Same color in both light and dark. */
+	background-color: #7b7b7b;
+}
+
+/*
+AppBar control colors.
+*/
+/* line 1258, _controls.scss */
+.win-appbar {
+	background-color: black;
+	border-color: black;
+}
+
+/* line 1263, _controls.scss */
+.win-ui-light.win-appbar, .win-ui-light .win-appbar {
+	background-color: white;
+	border-color: white;
+}
+
+/*
+Flyout control colors, flyout normally has light theme.
+*/
+/* line 1271, _controls.scss */
+.win-ui-light.win-flyout, .win-ui-light .win-flyout {
+	border-color: black;
+	background-color: white;
+}
+
+/* line 1276, _controls.scss */
+.win-ui-light.win-settingsflyout, .win-ui-light .win-settingsflyout {
+	border-color: rgba(0, 0, 0, 0.24);
+}
+
+/* line 1280, _controls.scss */
+.win-flyout {
+	border-color: white;
+	background-color: black;
+}
+
+/* line 1285, _controls.scss */
+.win-settingsflyout {
+	border-color: rgba(255, 255, 255, 0.24);
+}
+
+/*
+Settings flyout is light in both themes unless the app explicitly overrides it.
+*/
+/* line 1292, _controls.scss */
+.win-settingsflyout {
+	background-color: white;
+}
+
+/* line 1296, _controls.scss */
+.win-settingsflyout.win-ui-dark {
+	background-color: black;
+}
+
+/*
+Settings flyout will be white in dark theme so we need to have the header stay
+aligned with the theme unless the app explicitly overrides it.
+*/
+/* line 1305, _controls.scss */
+.win-settingsflyout .win-header {
+	background-color: black;
+}
+
+/* line 1309, _controls.scss */
+.win-settingsflyout .win-header.win-ui-light {
+	background-color: white;
+}
+
+/*
+Menu button colors, menu is always light theme.
+*/
+/* line 1316, _controls.scss */
+.win-ui-light.win-menu button, .win-ui-light .win-menu button {
+	background-color: transparent;
+	color: black;
+}
+
+/* line 1322, _controls.scss */
+.win-ui-light.win-menu button:focus, .win-ui-light .win-menu button:focus,
+.win-ui-light.win-menu button:active, .win-ui-light .win-menu button:active {
+	background-color: #dedede;
+}
+
+/* line 1326, _controls.scss */
+.win-ui-light.win-menu button:hover:active, .win-ui-light .win-menu button:hover:active {
+	color: white;
+	background-color: black;
+}
+
+/* line 1331, _controls.scss */
+.win-ui-light.win-menu button:-ms-keyboard-active, .win-ui-light .win-menu button:-ms-keyboard-active {
+	color: white;
+	background-color: black;
+}
+
+/* line 1337, _controls.scss */
+.win-ui-light.win-menu button:disabled, .win-ui-light .win-menu button:disabled,
+.win-ui-light.win-menu button:disabled:active, .win-ui-light .win-menu button:disabled:active {
+	background-color: transparent;
+	color: rgba(0, 0, 0, 0.1);
+}
+
+/* line 1342, _controls.scss */
+.win-menu button {
+	background-color: transparent;
+	color: white;
+}
+
+/* line 1348, _controls.scss */
+.win-menu button:focus,
+.win-menu button:active {
+	background-color: #dedede;
+}
+
+/* line 1352, _controls.scss */
+.win-menu button:hover:active {
+	color: black;
+	background-color: white;
+}
+
+/* line 1357, _controls.scss */
+.win-menu button:-ms-keyboard-active {
+	color: black;
+	background-color: white;
+}
+
+/* line 1363, _controls.scss */
+.win-menu button:disabled,
+.win-menu button:disabled:active {
+	background-color: transparent;
+	color: rgba(255, 255, 255, 0.1);
+}
+
+/*
+Rating control colors.
+*/
+/* line 1372, _controls.scss */
+.win-rating .win-star.win-user.win-full,
+.win-rating .win-star.win-user.win-full.win-disabled {
+	color: #5b2ec5;
+}
+
+/* line 1376, _controls.scss */
+.win-rating .win-star.win-tentative.win-full {
+	color: #8152ef;
+}
+
+/* line 1381, _controls.scss */
+.win-rating .win-star.win-average.win-full,
+.win-rating .win-star.win-average.win-full.win-disabled {
+	color: white;
+}
+
+/* line 1385, _controls.scss */
+.win-rating .win-star.win-empty {
+	color: rgba(255, 255, 255, 0.35);
+}
+
+/* line 1390, _controls.scss */
+.win-ui-light .win-rating .win-star.win-user.win-full,
+.win-ui-light .win-rating .win-star.win-user.win-full.win-disabled {
+	color: #4617b4;
+}
+
+/* line 1394, _controls.scss */
+.win-ui-light .win-rating .win-star.win-tentative.win-full {
+	color: #7241e4;
+}
+
+/* line 1399, _controls.scss */
+.win-ui-light .win-rating .win-star.win-average.win-full,
+.win-ui-light .win-rating .win-star.win-average.win-full.win-disabled {
+	color: black;
+}
+
+/* line 1403, _controls.scss */
+.win-ui-light .win-rating .win-star.win-empty {
+	color: rgba(0, 0, 0, 0.35);
+}
+
+/*
+SemanticZoom button colors.
+*/
+/* line 1410, _controls.scss */
+.win-semanticzoom-button {
+	background-color: rgba(216, 216, 216, 0.33);
+	border-color: transparent;
+}
+
+/* line 1415, _controls.scss */
+button:hover.win-semanticzoom-button {
+	background-color: #d8d8d8;
+}
+
+/* line 1419, _controls.scss */
+button.win-semanticzoom-button:active {
+	background-color: white;
+}
+
+/* line 1423, _controls.scss */
+.win-ui-light button.win-semanticzoom-button:active {
+	background-color: black;
+}
+
+/*
+Toggleswitch control colors.
+*/
+/* line 1431, _controls.scss */
+.win-toggleswitch .win-title {
+	color: white;
+}
+
+/* line 1435, _controls.scss */
+.win-toggleswitch .win-title.win-disabled {
+	color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 1439, _controls.scss */
+.win-ui-light .win-toggleswitch .win-title {
+	color: black;
+}
+
+/* line 1443, _controls.scss */
+.win-ui-light .win-toggleswitch .win-title.win-disabled {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 1447, _controls.scss */
+.win-toggleswitch .win-label {
+	color: white;
+}
+
+/* line 1451, _controls.scss */
+.win-toggleswitch .win-label.win-disabled {
+	color: rgba(255, 255, 255, 0.4);
+}
+
+/* line 1455, _controls.scss */
+.win-ui-light .win-toggleswitch .win-label {
+	color: black;
+}
+
+/* line 1459, _controls.scss */
+.win-ui-light .win-toggleswitch .win-label.win-disabled {
+	color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 1463, _controls.scss */
+.win-toggleswitch .win-switch::-ms-track {
+	background-color: transparent;
+}
+
+/* line 1467, _controls.scss */
+.win-toggleswitch .win-switch::-ms-track {
+	border-color: rgba(255, 255, 255, 0.35);
+}
+
+/* line 1471, _controls.scss */
+.win-toggleswitch .win-switch::-ms-fill-upper {
+	background-color: rgba(255, 255, 255, 0.26);
+}
+
+/* line 1475, _controls.scss */
+.win-toggleswitch .win-switch:hover::-ms-fill-upper {
+	background-color: rgba(255, 255, 255, 0.29);
+}
+
+/* line 1479, _controls.scss */
+.win-toggleswitch .win-switch:active::-ms-fill-upper {
+	background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* line 1483, _controls.scss */
+.win-toggleswitch .win-switch:disabled::-ms-track {
+	border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* line 1488, _controls.scss */
+.win-toggleswitch .win-switch:disabled::-ms-fill-lower,
+.win-toggleswitch .win-switch:disabled::-ms-fill-upper {
+	background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* line 1492, _controls.scss */
+.win-ui-light .win-toggleswitch .win-switch::-ms-track {
+	border-color: rgba(0, 0, 0, 0.35);
+}
+
+/* line 1496, _controls.scss */
+.win-ui-light .win-toggleswitch .win-switch::-ms-fill-upper {
+	background-color: rgba(0, 0, 0, 0.26);
+}
+
+/* line 1500, _controls.scss */
+.win-ui-light .win-toggleswitch .win-switch:hover::-ms-fill-upper {
+	background-color: rgba(0, 0, 0, 0.29);
+}
+
+/* line 1504, _controls.scss */
+.win-ui-light .win-toggleswitch .win-switch:active::-ms-fill-upper {
+	background-color: rgba(0, 0, 0, 0.35);
+}
+
+/* line 1508, _controls.scss */
+.win-ui-light .win-toggleswitch .win-switch:disabled::-ms-track {
+	border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 1513, _controls.scss */
+.win-ui-light .win-toggleswitch .win-switch:disabled::-ms-fill-lower,
+.win-ui-light .win-toggleswitch .win-switch:disabled::-ms-fill-upper {
+	background-color: rgba(0, 0, 0, 0.12);
+}
+
+/*
+Tooltip control colors.
+*/
+/* line 1520, _controls.scss */
+.win-tooltip {
+	background-color: white;
+	border-color: gray;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+/*Grid*/
+/*Type*/
+/* Transitions*/
+/* =============================================================================
+Colours
+========================================================================== */
+/* =============================================================================
+shadow
+========================================================================== */
+/* =============================================================================
+Buttons
+========================================================================== */
+/* =============================================================================
+Borders
+========================================================================== */
+/**
+ * Non-semantic helper classes: please define your styles before this section.
+ */
+/* For image replacement */
+/* line 8, _helpers.scss */
+.ir {
+	display: block;
+	text-indent: -99in;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+}
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+/* line 19, _helpers.scss */
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+/* line 26, _helpers.scss */
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+/* line 39, _helpers.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 49, _helpers.scss */
+.invisible {
+	visibility: hidden;
+}
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations.
+   nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 56, _helpers.scss */
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+/* line 61, _helpers.scss */
+.clearfix:after {
+	clear: both;
+}
+
+/* line 65, _helpers.scss */
+.clearfix {
+	zoom: 1;
+}
+
+/* line 69, _helpers.scss */
+.centred {
+	text-align: center;
+}
+
+/* line 73, _helpers.scss */
+.pie-element {
+	behavior: url("/css/PIE.htc");
+	position: relative;
+}
+
+/* line 87, _helpers.scss */
+.pie-container {
+	z-index: 0;
+	position: relative;
+}
+
+/*
+Progress control.
+*/
+/* line 6, _progress.scss */
+progress {
+	width: 180px;
+	height: 6px;
+	border-style: none;
+}
+
+/* line 12, _progress.scss */
+progress.win-medium {
+	width: 280px;
+}
+
+/* line 16, _progress.scss */
+progress.win-large {
+	width: 100%;
+}
+
+/* line 20, _progress.scss */
+progress::-ms-fill {
+	border-style: none;
+}
+
+/* line 24, _progress.scss */
+progress:indeterminate {
+	height: 4px;
+	padding: 1px 0;
+	/* Indeterminate dots should be 4px tall, but overall control stays 6px. */
+}
+
+@keyframes win-progress-fade-out {
+	/* line 30, _progress.scss */
+	from {
+		opacity: 1.0;
+	}
+
+	/* line 33, _progress.scss */
+	to {
+		opacity: 0.5;
+	}
+}
+
+/* line 38, _progress.scss */
+progress.win-paused:not(:indeterminate) {
+	animation-name: win-progress-fade-out;
+	animation-duration: 3s;
+	animation-timing-function: cubic-bezier(0.03, 0.76, 0.31, 1);
+	opacity: 0.5;
+}
+
+/* line 45, _progress.scss */
+progress.win-error::-ms-fill {
+	opacity: 0;
+}
+
+/* line 49, _progress.scss */
+progress.win-ring:indeterminate::-ms-fill {
+	animation-name: -ms-ring;
+}
+
+/* line 53, _progress.scss */
+progress.win-ring {
+	width: 20px;
+	height: 20px;
+}
+
+/* line 58, _progress.scss */
+progress.win-medium.win-ring {
+	width: 1.3em;
+	height: 1.3em;
+}
+
+/* line 63, _progress.scss */
+progress.win-large.win-ring {
+	width: 60px;
+	height: 60px;
+}
+
+/*
+Progress control colors.
+*/
+/* line 71, _progress.scss */
+progress {
+	background-color: rgba(255, 255, 255, 0.35);
+	color: #5b2ec5;
+}
+
+/* line 76, _progress.scss */
+.win-ui-light progress {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #4617b4;
+}
+
+/* line 81, _progress.scss */
+progress:indeterminate {
+	color: #8a57ff;
+}
+
+/* line 85, _progress.scss */
+.win-ui-light progress:indeterminate {
+	color: #4617b4;
+}
+
+/* line 89, _progress.scss */
+progress::-ms-fill {
+	background-color: currentColor;
+}
+
+/*
+Explicitly define indeterminate background transparent for dark and light
+because ".win-ui-light progress" has higher specificity than "progress:indeterminate".
+*/
+/* line 97, _progress.scss */
+progress:indeterminate, .win-ui-light progress:indeterminate {
+	background-color: transparent;
+}
+
+@keyframes WinJS-opacity-in {
+	/* line 2, _animations.scss */
+	from {
+		opacity: 0;
+	}
+
+	/* line 5, _animations.scss */
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes WinJS-opacity-out {
+	/* line 11, _animations.scss */
+	from {
+		opacity: 1;
+	}
+
+	/* line 14, _animations.scss */
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes WinJS-scale-up {
+	/* line 20, _animations.scss */
+	from {
+		transform: scale(0.85);
+	}
+
+	/* line 23, _animations.scss */
+	to {
+		transform: scale(1);
+	}
+}
+
+@keyframes WinJS-scale-down {
+	/* line 29, _animations.scss */
+	from {
+		transform: scale(1);
+	}
+
+	/* line 32, _animations.scss */
+	to {
+		transform: scale(0.85);
+	}
+}
+
+@keyframes WinJS-default-remove {
+	/* line 38, _animations.scss */
+	from {
+		transform: translateX(11px);
+	}
+
+	/* line 41, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-default-remove-rtl {
+	/* line 47, _animations.scss */
+	from {
+		transform: translateX(-11px);
+	}
+
+	/* line 50, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-default-apply {
+	/* line 56, _animations.scss */
+	from {
+		transform: none;
+	}
+
+	/* line 59, _animations.scss */
+	to {
+		transform: translateX(11px);
+	}
+}
+
+@keyframes WinJS-default-apply-rtl {
+	/* line 65, _animations.scss */
+	from {
+		transform: none;
+	}
+
+	/* line 68, _animations.scss */
+	to {
+		transform: translateX(-11px);
+	}
+}
+
+@keyframes WinJS-showEdgeUI {
+	/* line 74, _animations.scss */
+	from {
+		transform: translateY(-70px);
+	}
+
+	/* line 77, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-showPanel {
+	/* line 83, _animations.scss */
+	from {
+		transform: translateX(364px);
+	}
+
+	/* line 86, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-showPanel-rtl {
+	/* line 92, _animations.scss */
+	from {
+		transform: translateX(-364px);
+	}
+
+	/* line 95, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-hideEdgeUI {
+	/* line 101, _animations.scss */
+	from {
+		transform: none;
+	}
+
+	/* line 104, _animations.scss */
+	to {
+		transform: translateY(-70px);
+	}
+}
+
+@keyframes WinJS-hidePanel {
+	/* line 110, _animations.scss */
+	from {
+		transform: none;
+	}
+
+	/* line 113, _animations.scss */
+	to {
+		transform: translateX(364px);
+	}
+}
+
+@keyframes WinJS-hidePanel-rtl {
+	/* line 119, _animations.scss */
+	from {
+		transform: none;
+	}
+
+	/* line 122, _animations.scss */
+	to {
+		transform: translateX(-364px);
+	}
+}
+
+@keyframes WinJS-showPopup {
+	/* line 128, _animations.scss */
+	from {
+		transform: translateY(50px);
+	}
+
+	/* line 131, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-dragSourceEnd {
+	/* line 137, _animations.scss */
+	from {
+		transform: translateX(11px) scale(1.05);
+	}
+
+	/* line 140, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-dragSourceEnd-rtl {
+	/* line 146, _animations.scss */
+	from {
+		transform: translateX(-11px) scale(1.05);
+	}
+
+	/* line 149, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-enterContent {
+	/* line 155, _animations.scss */
+	from {
+		transform: translateX(40px);
+	}
+
+	/* line 158, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-enterContent-rtl {
+	/* line 164, _animations.scss */
+	from {
+		transform: translateX(-40px);
+	}
+
+	/* line 167, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-enterContent-snapped {
+	/* line 173, _animations.scss */
+	from {
+		transform: translateX(20px);
+	}
+
+	/* line 176, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-enterContent-snapped-rtl {
+	/* line 182, _animations.scss */
+	from {
+		transform: translateX(-20px);
+	}
+
+	/* line 185, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-exit {
+	/* line 191, _animations.scss */
+	from {
+		transform: none;
+	}
+
+	/* line 194, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-enterPage {
+	/* line 200, _animations.scss */
+	from {
+		transform: translateX(100px);
+	}
+
+	/* line 203, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-enterPage-rtl {
+	/* line 209, _animations.scss */
+	from {
+		transform: translateX(-100px);
+	}
+
+	/* line 212, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-enterPage-snapped {
+	/* line 218, _animations.scss */
+	from {
+		transform: translateX(40px);
+	}
+
+	/* line 221, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-enterPage-snapped-rtl {
+	/* line 227, _animations.scss */
+	from {
+		transform: translateX(-40px);
+	}
+
+	/* line 230, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+@keyframes WinJS-updateBadge {
+	/* line 236, _animations.scss */
+	from {
+		transform: translateY(24px);
+	}
+
+	/* line 239, _animations.scss */
+	to {
+		transform: none;
+	}
+}
+
+/*Grid*/
+/*Type*/
+/* Transitions*/
+/* =============================================================================
+Colours
+========================================================================== */
+/* =============================================================================
+shadow
+========================================================================== */
+/* =============================================================================
+Buttons
+========================================================================== */
+/* =============================================================================
+Borders
+========================================================================== */
+/**
+ * Non-semantic helper classes: please define your styles before this section.
+ */
+/* For image replacement */
+/* line 8, _helpers.scss */
+.ir {
+	display: block;
+	text-indent: -99in;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+}
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+/* line 19, _helpers.scss */
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+/* line 26, _helpers.scss */
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+/* line 39, _helpers.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 49, _helpers.scss */
+.invisible {
+	visibility: hidden;
+}
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations.
+   nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 56, _helpers.scss */
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+/* line 61, _helpers.scss */
+.clearfix:after {
+	clear: both;
+}
+
+/* line 65, _helpers.scss */
+.clearfix {
+	zoom: 1;
+}
+
+/* line 69, _helpers.scss */
+.centred {
+	text-align: center;
+}
+
+/* line 73, _helpers.scss */
+.pie-element {
+	behavior: url("/css/PIE.htc");
+	position: relative;
+}
+
+/* line 87, _helpers.scss */
+.pie-container {
+	z-index: 0;
+	position: relative;
+}
+
+/*
+Flyout control.
+*/
+/* line 6, _menu.scss */
+.win-flyout {
+	z-index: 1008;
+	position: fixed;
+	padding: 25px 20px 20px 20px;
+	border-style: solid;
+	border-width: 2px;
+	margin: 5px;
+	min-width: 26px;
+	/* 70px - padding - border = 26px */
+	max-width: 466px;
+	/* 510px - padding - border = 466px */
+	min-height: 5px;
+	/* 54px - padding - border = 5px */
+	max-height: calc(100% -59px);
+	/* 768px - margin - padding - border = 709px */
+	width: auto;
+	height: auto;
+	word-wrap: break-word;
+	overflow: auto;
+	-ms-touch-select: none;
+	font-size: 11pt;
+	font-weight: 400;
+	line-height: 1.3636;
+	/* 20px when font-size is 11pt */
+}
+
+/* line 27, _menu.scss */
+.win-flyout.win-leftalign {
+	margin-left: 0;
+}
+
+/* line 31, _menu.scss */
+.win-flyout.win-rightalign {
+	margin-right: 0;
+}
+
+/* line 35, _menu.scss */
+.win-flyout.win-scrolls {
+	overflow: auto;
+}
+
+/*
+Menu control.
+*/
+/* line 42, _menu.scss */
+.win-menu {
+	padding: 5px 0 5px 0;
+	line-height: 33px;
+	text-align: left;
+	/* Set explicitly in case our parent has different alignment, like appbar overflow. */
+	min-height: 38px;
+	/* 54px - padding - border = 38px */
+	max-height: calc(100% -26px);
+	/* 768px - margin - padding - border = 742px */
+	max-width: none;
+}
+
+/* line 51, _menu.scss */
+.win-menu:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	text-align: right;
+	/* Set explicitly in case our parent has different alignment, like appbar overflow. */
+}
+
+/*
+Menu commands.
+*/
+/* line 58, _menu.scss */
+.win-menu button.win-command {
+	display: block;
+	border: none;
+	padding: 10px 20px 12px 20px;
+	margin-left: 0;
+	margin-right: 0;
+	float: none;
+	text-align: left;
+	width: 100%;
+	font-size: 11pt;
+	font-weight: 600;
+	line-height: 18px;
+	/* 40px - 10px top padding - 12px bottom padding */
+}
+
+/* line 72, _menu.scss */
+.win-menu button.win-command:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	text-align: right;
+}
+
+/* line 76, _menu.scss */
+.win-menu button.win-command:focus {
+	outline: none;
+}
+
+/* line 80, _menu.scss */
+.win-menu hr.win-command {
+	display: block;
+	height: 1px;
+	width: auto;
+	border: 0;
+	padding: 0;
+	margin: 9px 20px 10px 20px;
+}
+
+/*
+Menu toggle buttons.
+*/
+/* line 93, _menu.scss */
+.win-menu-toggle button.win-command::before {
+	font-family: 'Segoe UI Symbol';
+	content: "\E0E7";
+	visibility: hidden;
+	padding-left: 0px;
+	padding-right: 10px;
+}
+
+/* line 101, _menu.scss */
+.win-menu-toggle button[aria-checked=true].win-command::before {
+	/* Display a checkbox if aria-checked is set */
+	visibility: visible;
+}
+
+/* line 106, _menu.scss */
+.win-menu-toggle button.win-command:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::before {
+	padding-right: 0;
+	padding-left: 10px;
+	float: right;
+}
+
+/*
+Settings Pane
+*/
+/* line 115, _menu.scss */
+.win-settingsflyout {
+	z-index: 1004;
+	/* above appbar and below flyouts */
+	border-left: 1px solid;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 345px;
+	/* 346px - border (1px) */
+	-ms-touch-select: none;
+}
+
+/* line 126, _menu.scss */
+.win-settingsflyout.win-wide {
+	width: 645px;
+	/* 646px - border (1px) */
+}
+
+/* line 130, _menu.scss */
+.win-settingsflyout .win-header {
+	padding-left: 1.3em;
+	padding-right: 1.3em;
+	padding-top: 32px;
+	height: 48px;
+}
+
+/* Settings back button is slightly smaller. */
+/* line 138, _menu.scss */
+.win-settingsflyout .win-backbutton {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	font-size: 8pt;
+	line-height: 26px;
+	margin-top: 3px;
+}
+
+/* line 147, _menu.scss */
+.win-settingsflyout .win-header .win-label {
+	display: inline-block;
+	padding-left: 1.3em;
+	font-size: 20pt;
+	line-height: 33px;
+}
+
+/* line 154, _menu.scss */
+.win-settingsflyout .win-content {
+	overflow: auto;
+	padding-left: 1.3em;
+	padding-right: 1.3em;
+	padding-top: 33px;
+	height: calc(100% -112px);
+}
+
+/* line 162, _menu.scss */
+.win-settingsflyout .win-label {
+	font-size: 20pt;
+	font-weight: 200;
+	line-height: normal;
+}
+
+/* line 168, _menu.scss */
+.win-settingsflyout:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	right: auto;
+	left: 0;
+	border-left: none;
+	border-right: 1px solid;
+}
+
+/* line 175, _menu.scss */
+.win-settingsflyout .win-header .win-label:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	padding-right: 1.3em;
+	padding-left: 0;
+}
+
+/* line 180, _menu.scss */
+.win-settingsflyout .win-content .win-settings-section {
+	padding-top: 0;
+	padding-bottom: 39px;
+}
+
+/* line 185, _menu.scss */
+.win-settingsflyout .win-content .win-settings-section p {
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 25px;
+}
+
+/* line 191, _menu.scss */
+.win-settingsflyout .win-content .win-settings-section a {
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 25px;
+	display: inline-block;
+}
+
+/* line 198, _menu.scss */
+.win-settingsflyout .win-content .win-settings-section .win-toggleswitch {
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 20px;
+}
+
+/* line 204, _menu.scss */
+.win-settingsflyout .win-content .win-settings-section label {
+	display: block;
+	padding-bottom: 7px;
+}
+
+/* line 212, _menu.scss */
+.win-settingsflyout .win-content .win-settings-section button,
+.win-settingsflyout .win-content .win-settings-section select,
+.win-settingsflyout .win-content .win-settings-section input[type=button],
+.win-settingsflyout .win-content .win-settings-section input[type=text] {
+	margin-bottom: 25px;
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+/* line 218, _menu.scss */
+.win-settingsflyout .win-content .win-settings-section input[type=radio] {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 15px;
+}
+
+/* line 224, _menu.scss */
+.win-settingsflyout .win-content .win-settings-section button:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-bottom: 25px;
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+/* line 230, _menu.scss */
+.win-settingsflyout .win-content .win-settings-section select:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-bottom: 25px;
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+/* line 236, _menu.scss */
+.win-settingsflyout .win-content .win-settings-section input[type=text]:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-bottom: 25px;
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+/* line 242, _menu.scss */
+.win-settingsflyout .win-content .win-settings-section input[type=button]:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-bottom: 25px;
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+/*
+Common AppBar/Flyout/SettingsFlyout styles
+*/
+/* line 254, _menu.scss */
+.win-flyout input[type=text],
+.win-settingsflyout input[type=text],
+.win-appbar input[type=text] {
+	-ms-touch-select: grippers;
+}
+
+/* line 258, _menu.scss */
+.win-appbarclickeater {
+	z-index: 1000;
+	opacity: 0;
+	background-color: Purple;
+	display: none;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	-ms-touch-action: none;
+}
+
+/* line 271, _menu.scss */
+.win-flyoutmenuclickeater {
+	z-index: 1006;
+	opacity: 0;
+	background-color: Lime;
+	display: none;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	-ms-touch-action: none;
+}
+
+/* line 9, _ui-custom-dark.scss */
+html, body {
+	height: 100%;
+	width: 100%;
+	-ms-user-select: none;
+	cursor: default;
+	-ms-scroll-translation: vertical-to-horizontal;
+}
+
+/* line 17, _ui-custom-dark.scss */
+html {
+	overflow: hidden;
+}
+
+/* line 21, _ui-custom-dark.scss */
+body {
+	-ms-content-zooming: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------
+
+  88888888e.     d8b       88888888e.       d8b       8bc:..  88888    .8888888.    88888  888888888.        d8b
+  888888888b    d888b      888888888b      d888b      888888bb88888   d888888888b   88888  8888888888b      d888b
+  888888888D   d88888b     888888888D     d88888b     8888888888888  C88888888888D  88888  88888888888D    d88888b
+  88888888P   d8888888b    88888888P     d8888888b    8888888888888  C88888888888D  88888  88888888888D   d8888888b
+  888888P    d888888888b   88888888b    d888888888b   8888888888888   d888888888P   88888  8888888888b   d888888888b
+  88888     d88888888888b  888888888b  d88888888888b  8888888888888    '8888888'    88888  888888888'   d88888888888b
+
+------------------------------------------------------------------------------------------------------------------------
+
+    Author: Rafal Bromirski
+    www: http://paranoida.com/
+    blog: http://lab.paranoida.com/
+
+    twitter: http://twitter.com/paranoida
+    dribbble: http://dribbble.com/paranoida
+
+    Licensed under a MIT License
+
+--------------------------------------------------------------------------------------------------------------------- */
+/* --- main content ------------------------------------------------------------------------------------------------- */
+/*Grid*/
+/*Type*/
+/* Transitions*/
+/* =============================================================================
+Colours
+========================================================================== */
+/* =============================================================================
+shadow
+========================================================================== */
+/* =============================================================================
+Buttons
+========================================================================== */
+/* =============================================================================
+Borders
+========================================================================== */
+/**
+ * Non-semantic helper classes: please define your styles before this section.
+ */
+/* For image replacement */
+/* line 8, _helpers.scss */
+.ir {
+	display: block;
+	text-indent: -99in;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+}
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+/* line 19, _helpers.scss */
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+/* line 26, _helpers.scss */
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+/* line 39, _helpers.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 49, _helpers.scss */
+.invisible {
+	visibility: hidden;
+}
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations.
+   nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 56, _helpers.scss */
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+/* line 61, _helpers.scss */
+.clearfix:after {
+	clear: both;
+}
+
+/* line 65, _helpers.scss */
+.clearfix {
+	zoom: 1;
+}
+
+/* line 69, _helpers.scss */
+.centred {
+	text-align: center;
+}
+
+/* line 73, _helpers.scss */
+.pie-element {
+	behavior: url("/css/PIE.htc");
+	position: relative;
+}
+
+/* line 87, _helpers.scss */
+.pie-container {
+	z-index: 0;
+	position: relative;
+}
+
+/* Special microsoft media queries */
+@media (-ms-view-state: snapped) {
+	/* line 28, _media-queries.scss */
+	h1, .win-type-xx-large {
+		font-size: 20pt;
+		font-weight: 200;
+		line-height: 1.2;
+		/* 32px when font-size is 20pt */
+	}
+
+	/* line 33, _media-queries.scss */
+	h2, .win-type-x-large {
+		font-size: 11pt;
+		font-weight: 600;
+		line-height: 1.3636;
+		/* 20px when font-size is 11pt */
+	}
+
+	/* line 38, _media-queries.scss */
+	h3, .win-type-large {
+		font-size: 11pt;
+		font-weight: 400;
+		line-height: 1.3636;
+		/* 20px when font-size is 11pt */
+	}
+
+	/* line 43, _media-queries.scss */
+	h1.win-type-ellipsis, .win-type-xx-large.win-type-ellipsis {
+		line-height: 1.5;
+		/* 40px when font-size is 20pt */
+	}
+
+	/* line 46, _media-queries.scss */
+	h2.win-type-ellipsis, .win-type-x-large.win-type-ellipsis {
+		line-height: 1.3636;
+		/* 20px when font-size is 11pt */
+	}
+
+	/* line 50, _media-queries.scss */
+	.win-backbutton {
+		width: 30px;
+		height: 30px;
+		font-size: 10pt;
+		line-height: 26px;
+		/* line-height must match the content box height */
+		vertical-align: -0.37em;
+	}
+
+	/* line 57, _media-queries.scss */
+	.win-tooltip {
+		max-width: 310px;
+		box-sizing: border-box;
+	}
+
+	/* line 62, _media-queries.scss */
+	.fragment header[role=banner] {
+		-ms-grid-columns: auto 1fr;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	/* line 68, _media-queries.scss */
+	.fragment header[role=banner] .win-backbutton {
+		-ms-grid-column: 1;
+		margin-bottom: 0;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-top: 76px;
+	}
+
+	/* line 76, _media-queries.scss */
+	.fragment header[role=banner] .win-backbutton:disabled {
+		display: none;
+	}
+
+	/* line 80, _media-queries.scss */
+	.fragment header[role=banner] .titlearea {
+		-ms-grid-column: 2;
+		margin-bottom: 0;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-top: 68px;
+	}
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+	/* line 89, _media-queries.scss */
+	.fragment header[role=banner] {
+		-ms-grid-columns: 29px 71px 1fr;
+	}
+}
+
+@media (-ms-high-contrast) {
+	/*
+	  AppBar Borders
+	  */
+	/* line 98, _media-queries.scss */
+	.win-appbar {
+		border: solid 2px;
+	}
+
+	/* line 101, _media-queries.scss */
+	.win-appbar.win-top {
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	}
+
+	/* line 106, _media-queries.scss */
+	.win-appbar.win-bottom {
+		border-bottom: none;
+		border-left: none;
+		border-right: none;
+	}
+
+	/* line 111, _media-queries.scss */
+	.win-appbar.win-top button.win-command {
+		padding-bottom: 10px;
+	}
+
+	/* line 114, _media-queries.scss */
+	.win-appbar.win-bottom button.win-command {
+		padding-top: 10px;
+	}
+
+	/* line 117, _media-queries.scss */
+	.win-appbar.win-top hr.win-command {
+		margin-bottom: 32px;
+	}
+
+	/* line 120, _media-queries.scss */
+	.win-appbar.win-bottom hr.win-command {
+		margin-top: 12px;
+	}
+
+	/* line 123, _media-queries.scss */
+	.win-commandlayout {
+		min-height: 66px;
+	}
+
+	/* line 126, _media-queries.scss */
+	.win-commandlayout {
+		min-height: 66px;
+	}
+
+	/* line 129, _media-queries.scss */
+	.win-appbar.win-top hr.win-command {
+		margin-bottom: 12px;
+	}
+
+	/* line 132, _media-queries.scss */
+	.win-appbar.win-bottom hr.win-command {
+		margin-top: 12px;
+	}
+}
+
+@media (-ms-high-contrast) {
+	/*
+	  Typographic color definitions.
+	  */
+	/* line 141, _media-queries.scss */
+	.win-type-interactive {
+		color: WindowText;
+	}
+
+	/* line 144, _media-queries.scss */
+	.win-type-interactive:hover, .win-type-interactive:hover:active {
+		color: -ms-hotlight;
+	}
+
+	/* line 147, _media-queries.scss */
+	.win-type-interactive:-ms-keyboard-active {
+		color: -ms-hotlight;
+	}
+
+	/*
+	  Text selection high contrast color.
+	  */
+	/* line 154, _media-queries.scss */
+	::selection, select:focus::-ms-value {
+		background-color: Highlight;
+		color: HighlightText;
+	}
+
+	/*
+	  Button high contrast colors.
+	  */
+	/* line 164, _media-queries.scss */
+	button, input[type=button], input[type=reset],
+	input[type=file]::-ms-browse, input::-ms-clear,
+	input::-ms-reveal, select::-ms-expand, .win-backbutton, .win-semanticzoom-button {
+		background-color: ButtonFace;
+		border-color: ButtonText;
+		color: ButtonText;
+	}
+
+	/* line 169, _media-queries.scss */
+	button[type=submit], input[type=submit] {
+		background-color: Highlight;
+		border-color: ButtonText;
+		color: HighlightText;
+	}
+
+	/* line 176, _media-queries.scss */
+	button:hover, input[type=button]:hover, input[type=reset]:hover,
+	input::-ms-clear:hover, input::-ms-reveal:hover,
+	input[type=file]::-ms-browse:hover, .win-backbutton:hover, .win-semanticzoom-button:hover {
+		background-color: Highlight;
+		border-color: ButtonText;
+		color: HighlightText;
+	}
+
+	/* line 185, _media-queries.scss */
+	button:hover:active, button[type=submit]:hover:active, input[type=button]:hover:active,
+	input[type=submit]:hover:active, input[type=reset]:hover:active,
+	input::-ms-clear:hover:active, input::-ms-reveal:hover:active,
+	input[type=file]::-ms-browse:hover:active, .win-backbutton:hover:active,
+	.win-semanticzoom-button:hover:active {
+		background-clip: border-box;
+		background-color: ButtonText;
+		border-color: transparent;
+		color: ButtonFace;
+	}
+
+	/* line 193, _media-queries.scss */
+	button:-ms-keyboard-active, button[type=submit]:-ms-keyboard-active, input[type=button]:-ms-keyboard-active,
+	input[type=submit]:-ms-keyboard-active, input[type=reset]:-ms-keyboard-active,
+	.win-backbutton:-ms-keyboard-active, .win-semanticzoom-button:-ms-keyboard-active {
+		background-clip: border-box;
+		background-color: ButtonText;
+		border-color: transparent;
+		color: ButtonFace;
+	}
+
+	/* line 205, _media-queries.scss */
+	button:disabled, button[type=submit]:disabled, input[type=button]:disabled,
+	input[type=submit]:disabled, input[type=reset]:disabled,
+	input[type=file]:disabled::-ms-browse, input:disabled::-ms-clear, input:disabled::-ms-reveal,
+	select:disabled::-ms-expand, .win-backbutton:disabled,
+	button:disabled:active, button[type=submit]:disabled:active, input[type=button]:disabled:active,
+	input[type=submit]:disabled:active, input[type=reset]:disabled:active,
+	input[type=file]:disabled::-ms-browse:active, .win-backbutton:disabled:active {
+		background-color: ButtonFace;
+		border-color: GrayText;
+		color: GrayText;
+	}
+
+	/*
+	  Text input, checkbox, radio, and select high contrast colors.
+	  */
+	/* line 218, _media-queries.scss */
+	input[type=text], input[type=password],
+	input[type=email], input[type=number],
+	input[type=tel], input[type=url],
+	input[type=search], textarea, .win-textarea, select,
+	input::-ms-check {
+		background-color: ButtonFace;
+		border-color: ButtonText;
+		color: ButtonText;
+	}
+
+	/* line 223, _media-queries.scss */
+	input:hover::-ms-check {
+		/* only checkbox and radio have hover state */
+		background-color: Highlight;
+		color: HighlightText;
+	}
+
+	/* line 228, _media-queries.scss */
+	input:hover:active::-ms-check {
+		/* only checkbox and radio have active state */
+		background-clip: border-box;
+		background-color: ButtonText;
+		border-color: transparent;
+		color: ButtonFace;
+	}
+
+	/* line 235, _media-queries.scss */
+	input:-ms-keyboard-active::-ms-check {
+		/* only checkbox and radio have active state */
+		background-clip: border-box;
+		background-color: ButtonText;
+		border-color: transparent;
+		color: ButtonFace;
+	}
+
+	/* line 247, _media-queries.scss */
+	input[type=text]:disabled, input[type=password]:disabled,
+	input[type=email]:disabled, input[type=number]:disabled,
+	input[type=tel]:disabled, input[type=url]:disabled,
+	input[type=search]:disabled, input[type=file]::-ms-value,
+	textarea:disabled, .win-textarea:disabled, select:disabled,
+	input:disabled::-ms-check, input:disabled:active::-ms-check {
+		border-color: GrayText;
+		color: ButtonText;
+		background-color: ButtonFace;
+	}
+
+	/* line 254, _media-queries.scss */
+	input:disabled::-ms-check, input:disabled:active::-ms-check,
+	input[type]:-ms-input-placeholder, textarea:-ms-input-placeholder,
+	select:disabled::-ms-value {
+		color: GrayText;
+	}
+
+	/*
+	  Select option high contrast colors.
+	  */
+	/* line 261, _media-queries.scss */
+	option:checked, select:focus::-ms-value {
+		color: HighlightText;
+		background-color: Highlight;
+	}
+
+	/* line 266, _media-queries.scss */
+	select:active:not(:disabled)::-ms-value, select:active:not(:disabled)::-ms-expand,
+	option:hover:active, option:checked:hover:active {
+		color: ButtonFace;
+		background-color: ButtonText;
+	}
+
+	/* line 273, _media-queries.scss */
+	option:checked:disabled, option:checked:disabled:active,
+	optgroup:disabled option:checked, optgroup:disabled option:checked:active,
+	select:disabled option:checked, select:disabled option:checked:active,
+	select:disabled:focus::-ms-value {
+		color: ButtonFace;
+		background-color: GrayText;
+	}
+
+	/*
+	  Link high contrast colors.
+	  */
+	/* line 281, _media-queries.scss */
+	a {
+		color: -ms-hotlight;
+	}
+
+	/* line 284, _media-queries.scss */
+	a[disabled] {
+		color: GrayText;
+	}
+
+	/*
+	  Progress high contrast colors.
+	  */
+	/* line 291, _media-queries.scss */
+	progress {
+		border: 1px solid ButtonText;
+		background-color: ButtonFace;
+		color: Highlight;
+	}
+
+	/* line 296, _media-queries.scss */
+	progress:indeterminate {
+		border: transparent;
+	}
+
+	/* line 299, _media-queries.scss */
+	progress::-ms-fill {
+		border-right: 1px solid ButtonText;
+		background-color: Highlight;
+	}
+
+	/* line 303, _media-queries.scss */
+	progress.win-paused:not(:indeterminate)::-ms-fill {
+		background-color: GrayText;
+	}
+
+	/* line 306, _media-queries.scss */
+	progress.win-paused:not(:indeterminate) {
+		opacity: 1.0;
+	}
+
+	/*
+	  Range control high contrast colors.
+	  */
+	/* line 313, _media-queries.scss */
+	input[type=range]::-ms-track {
+		border: 1px solid ButtonText;
+		background-color: ButtonFace;
+		color: transparent;
+	}
+
+	/* line 318, _media-queries.scss */
+	input[type=range]:disabled::-ms-track {
+		border-color: GrayText;
+	}
+
+	/* line 321, _media-queries.scss */
+	input[type=range]::-ms-fill-lower {
+		background-color: Highlight;
+	}
+
+	/* line 324, _media-queries.scss */
+	input[type=range]:disabled::-ms-fill-lower {
+		background-color: transparent;
+	}
+
+	/* line 328, _media-queries.scss */
+	input[type=range]::-ms-ticks-before,
+	input[type=range]::-ms-ticks-after {
+		color: ButtonText;
+	}
+
+	/* line 332, _media-queries.scss */
+	input[type=range]:disabled::-ms-ticks-before,
+	input[type=range]:disabled::-ms-ticks-after {
+		color: GrayText;
+	}
+
+	/* line 335, _media-queries.scss */
+	input[type=range]::-ms-thumb {
+		background-color: ButtonText;
+		border-left: 1px solid HighlightText;
+		border-right: 1px solid HighlightText;
+	}
+
+	/* line 340, _media-queries.scss */
+	input[type=range].win-vertical::-ms-thumb {
+		border-left-style: none;
+		border-right-style: none;
+		border-top: 1px solid HighlightText;
+		border-bottom: 1px solid HighlightText;
+	}
+
+	/* line 346, _media-queries.scss */
+	input[type=range]:hover::-ms-thumb {
+		background-color: Highlight;
+	}
+
+	/* line 349, _media-queries.scss */
+	input[type=range]:active::-ms-thumb {
+		background-color: HighlightText;
+		border-color: ButtonText;
+	}
+
+	/* line 354, _media-queries.scss */
+	input[type=range]:disabled::-ms-thumb,
+	input[type=range]:disabled:active::-ms-thumb {
+		background-color: GrayText;
+		border-color: GrayText;
+	}
+
+	/*
+	  AppBar high contrast colors.
+	  */
+	/* line 362, _media-queries.scss */
+	.win-appbar {
+		background-color: ButtonFace;
+		border-color: Highlight;
+	}
+
+	/*
+	  Command button label high contrast colors.
+	  */
+	/* line 372, _media-queries.scss */
+	button.win-command,
+	button.win-command:active,
+	button.win-command:hover:active {
+		background-color: transparent;
+		border-color: transparent;
+	}
+
+	/* line 376, _media-queries.scss */
+	hr.win-command {
+		background-color: ButtonText;
+	}
+
+	/* line 379, _media-queries.scss */
+	.win-label {
+		background-color: transparent;
+		color: ButtonText;
+	}
+
+	/* line 384, _media-queries.scss */
+	button:disabled .win-label,
+	button:disabled:active .win-label {
+		color: GrayText;
+	}
+
+	/* line 387, _media-queries.scss */
+	button.win-command:focus {
+		border-color: ButtonText;
+	}
+
+	/* line 390, _media-queries.scss */
+	button.win-hidefocus:focus {
+		outline: none;
+	}
+
+	/* line 393, _media-queries.scss */
+	button.win-command.win-hidefocus:focus {
+		border-color: transparent;
+	}
+
+	/*
+	  Command Image high contrast colors with states
+	  */
+	/* line 400, _media-queries.scss */
+	.win-commandimage {
+		background-color: transparent;
+		color: ButtonText;
+	}
+
+	/* line 405, _media-queries.scss */
+	button:active .win-commandimage,
+	button:hover:active .win-commandimage {
+		color: ButtonFace;
+	}
+
+	/* line 408, _media-queries.scss */
+	button:hover .win-commandimage {
+		color: HighlightText;
+	}
+
+	/* line 412, _media-queries.scss */
+	button:disabled .win-commandimage,
+	button:disabled:active .win-commandimage {
+		color: GrayText;
+	}
+
+	/* line 415, _media-queries.scss */
+	button[aria-checked=true] .win-commandimage {
+		color: ButtonFace;
+	}
+
+	/* line 419, _media-queries.scss */
+	button[aria-checked=true]:active .win-commandimage,
+	button[aria-checked=true]:hover:active .win-commandimage {
+		color: ButtonText;
+	}
+
+	/* line 422, _media-queries.scss */
+	button[aria-checked=true]:hover .win-commandimage {
+		color: HighlightText;
+	}
+
+	/* line 426, _media-queries.scss */
+	button[aria-checked=true]:disabled .win-commandimage,
+	button[aria-checked=true]:disabled:active .win-commandimage {
+		color: ButtonFace;
+	}
+
+	/*
+	  Command Image high contrast colors with states
+	  */
+	/* line 433, _media-queries.scss */
+	.win-commandring {
+		background-color: transparent;
+		border-color: ButtonText;
+	}
+
+	/* line 438, _media-queries.scss */
+	button:active .win-commandring,
+	button:hover:active .win-commandring {
+		background-color: ButtonText;
+		border-color: ButtonText;
+	}
+
+	/* line 442, _media-queries.scss */
+	button:hover .win-commandring {
+		background-color: Highlight;
+		border-color: ButtonText;
+	}
+
+	/* line 447, _media-queries.scss */
+	button:disabled .win-commandring,
+	button:disabled:active .win-commandring {
+		background-color: transparent;
+		border-color: GrayText;
+	}
+
+	/* line 451, _media-queries.scss */
+	button[aria-checked=true] .win-commandring {
+		background-color: ButtonText;
+		border-color: ButtonText;
+	}
+
+	/* line 456, _media-queries.scss */
+	button[aria-checked=true]:active .win-commandring,
+	button[aria-checked=true]:hover:active .win-commandring {
+		background-color: ButtonFace;
+		border-color: ButtonText;
+	}
+
+	/* line 460, _media-queries.scss */
+	button[aria-checked=true]:hover .win-commandring {
+		background-color: Highlight;
+		border-color: ButtonText;
+	}
+
+	/* line 465, _media-queries.scss */
+	button[aria-checked=true]:disabled .win-commandring,
+	button[aria-checked=true]:disabled:active .win-commandring {
+		background-color: GrayText;
+		border-color: GrayText;
+	}
+
+	/*
+	  Menu command high contrast colors
+	  */
+	/* line 473, _media-queries.scss */
+	.win-menu hr.win-command {
+		background-color: ButtonText;
+	}
+
+	/* line 476, _media-queries.scss */
+	.win-menu button.win-command {
+		background-color: ButtonFace;
+		color: ButtonText;
+	}
+
+	/* line 480, _media-queries.scss */
+	.win-menu button.win-command:focus {
+		outline: none;
+		background-color: Highlight;
+		color: HighlightText;
+	}
+
+	/* line 485, _media-queries.scss */
+	.win-menu button.win-command:active {
+		background-color: Highlight;
+		color: HighlightText;
+	}
+
+	/* line 489, _media-queries.scss */
+	.win-menu button.win-command:hover:active {
+		background-color: ButtonText;
+		color: ButtonFace;
+	}
+
+	/* line 493, _media-queries.scss */
+	.win-menu button.win-command:-ms-keyboard-active {
+		background-color: ButtonText;
+		color: ButtonFace;
+	}
+
+	/* line 498, _media-queries.scss */
+	.win-menu button.win-command:disabled,
+	.win-menu button.win-command:disabled:active {
+		background-color: ButtonFace;
+		color: GrayText;
+	}
+
+	/*
+	  FlipView high contrast colors.
+	  */
+	/* line 506, _media-queries.scss */
+	.win-flipview .win-navbottom {
+		left: 50%;
+		top: 100%;
+		margin-left: -35px;
+		margin-top: -35px;
+	}
+
+	/* line 512, _media-queries.scss */
+	.win-flipview .win-navbutton {
+		background-color: ButtonFace;
+		color: ButtonText;
+		border: 2px solid ButtonText;
+		width: 65px;
+		height: 35px;
+	}
+
+	/* line 519, _media-queries.scss */
+	.win-flipview .win-navbutton:hover {
+		background-color: Highlight;
+		color: HighlightText;
+	}
+
+	/* line 523, _media-queries.scss */
+	.win-flipview .win-navbutton:active {
+		background-color: ButtonText;
+		color: ButtonFace;
+	}
+
+	/* line 527, _media-queries.scss */
+	.win-flipview .win-navright {
+		margin-left: -65px;
+	}
+
+	/*
+	  Flyout control high contrast colors.
+	  */
+	/* line 534, _media-queries.scss */
+	.win-flyout, .win-settingsflyout {
+		background-color: Window;
+		border-color: WindowText;
+		color: WindowText;
+	}
+
+	/*
+	  ListView high contrast colors.
+	  */
+	/* line 543, _media-queries.scss */
+	.win-listview.win-selectionstylefilled .win-container {
+		background-color: Window;
+		color: WindowText;
+	}
+
+	/* line 547, _media-queries.scss */
+	.win-listview .win-container:hover {
+		outline: Highlight solid 3px;
+	}
+
+	/* line 550, _media-queries.scss */
+	.win-listview.win-selectionstylefilled .win-container:hover {
+		background-color: Highlight;
+		color: HighlightText;
+	}
+
+	/* line 554, _media-queries.scss */
+	.win-listview .win-focusedoutline {
+		outline-color: WindowText;
+	}
+
+	/* line 558, _media-queries.scss */
+	.win-listview.win-selectionstylefilled .win-container.win-selected,
+	.win-listview.win-selectionstylefilled .win-container.win-selected:hover {
+		background-color: Highlight;
+		color: HighlightText;
+	}
+
+	/* line 562, _media-queries.scss */
+	.win-listview .win-groupheader {
+		color: WindowText;
+	}
+
+	/* line 565, _media-queries.scss */
+	.win-listview:not(.win-selectionstylefilled) .win-container.win-selected .win-selectionborder {
+		border-color: Highlight;
+	}
+
+	/* line 568, _media-queries.scss */
+	.win-listview.win-selectionstylefilled .win-container.win-selected .win-selectionborder {
+		border-color: transparent;
+	}
+
+	/* line 571, _media-queries.scss */
+	.win-listview:not(.win-selectionstylefilled) .win-container.win-selected:hover .win-selectionborder {
+		border-color: Highlight;
+	}
+
+	/* line 575, _media-queries.scss */
+	.win-listview.win-selectionstylefilled .win-selected .win-selectionbackground,
+	.win-listview.win-selectionstylefilled .win-selected:hover .win-selectionbackground {
+		background-color: Highlight;
+		color: HighlightText;
+	}
+
+	/* line 579, _media-queries.scss */
+	.win-selectioncheckmark {
+		color: HighlightText;
+	}
+
+	/* line 582, _media-queries.scss */
+	.win-listview.win-selectionstylefilled .win-selectioncheckmarkbackground {
+		border-color: transparent;
+	}
+
+	/* line 585, _media-queries.scss */
+	.win-listview:not(.win-selectionstylefilled) .win-selectioncheckmarkbackground {
+		border-top-color: Highlight;
+		border-right-color: Highlight;
+		border-left-color: transparent;
+		border-bottom-color: transparent;
+	}
+
+	/* line 591, _media-queries.scss */
+	.win-listview:not(.win-selectionstylefilled) .win-selectioncheckmarkbackground:hover {
+		border-top-color: Highlight;
+		border-right-color: Highlight;
+	}
+
+	/* line 595, _media-queries.scss */
+	.win-listview.win-rtl:not(.win-selectionstylefilled) .win-selectioncheckmarkbackground {
+		border-top-color: Highlight;
+		border-left-color: Highlight;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+	}
+
+	/* line 601, _media-queries.scss */
+	.win-listview .win-selectionhint {
+		color: WindowText;
+	}
+
+	/* line 609, _media-queries.scss */
+	.win-listview.win-selectionstylefilled .win-selected a,
+	.win-listview.win-selectionstylefilled .win-container:hover a,
+	.win-listview.win-selectionstylefilled .win-selected progress,
+	.win-listview.win-selectionstylefilled .win-container:hover progress,
+	.win-listview.win-selectionstylefilled .win-selected .win-rating .win-star:after,
+	.win-listview.win-selectionstylefilled .win-container:hover .win-rating .win-star:after {
+		color: HighlightText;
+	}
+
+	/* line 629, _media-queries.scss */
+	.win-listview.win-selectionstylefilled .win-selected input,
+	.win-listview.win-selectionstylefilled .win-container:hover input,
+	.win-listview.win-selectionstylefilled .win-selected input::-ms-check,
+	.win-listview.win-selectionstylefilled .win-container:hover input::-ms-check,
+	.win-listview.win-selectionstylefilled .win-selected input::-ms-value,
+	.win-listview.win-selectionstylefilled .win-container:hover input::-ms-value,
+	.win-listview.win-selectionstylefilled .win-selected input::-ms-track,
+	.win-listview.win-selectionstylefilled .win-container:hover input::-ms-track,
+	.win-listview.win-selectionstylefilled .win-selected button,
+	.win-listview.win-selectionstylefilled .win-container:hover button,
+	.win-listview.win-selectionstylefilled .win-selected progress,
+	.win-listview.win-selectionstylefilled .win-container:hover progress,
+	.win-listview.win-selectionstylefilled .win-selected progress::-ms-fill,
+	.win-listview.win-selectionstylefilled .win-container:hover progress::-ms-fill,
+	.win-listview.win-selectionstylefilled .win-selected select,
+	.win-listview.win-selectionstylefilled .win-container:hover select,
+	.win-listview.win-selectionstylefilled .win-selected textarea,
+	.win-listview.win-selectionstylefilled .win-container:hover textarea {
+		border-color: HighlightText;
+	}
+
+	/* line 635, _media-queries.scss */
+	.win-listview.win-selectionstylefilled .win-selected input[type=range]::-ms-fill-lower,
+	.win-listview.win-selectionstylefilled .win-container:hover input[type=range]::-ms-fill-lower,
+	.win-listview.win-selectionstylefilled .win-selected progress::-ms-fill,
+	.win-listview.win-selectionstylefilled .win-container:hover progress::-ms-fill {
+		background-color: HighlightText;
+	}
+
+	/* line 641, _media-queries.scss */
+	.win-listview.win-selectionstylefilled .win-selected input[type=range]::-ms-fill-upper,
+	.win-listview.win-selectionstylefilled .win-container:hover input[type=range]::-ms-fill-upper,
+	.win-listview.win-selectionstylefilled .win-selected progress,
+	.win-listview.win-selectionstylefilled .win-container:hover progress {
+		background-color: Highlight;
+	}
+
+	/* line 645, _media-queries.scss */
+	.win-listview.win-selectionstylefilled .win-selected .win-rating .win-star.win-full:before,
+	.win-listview.win-selectionstylefilled .win-container:hover .win-rating .win-star.win-full:before {
+		color: ButtonFace;
+	}
+
+	/* line 649, _media-queries.scss */
+	.win-listview.win-selectionstylefilled .win-selected .win-rating .win-star.win-empty:before,
+	.win-listview.win-selectionstylefilled .win-container:hover .win-rating .win-star.win-empty:before {
+		color: HighLight;
+	}
+
+	/*
+	  Rating control high contrast colors.
+	  */
+	/* line 656, _media-queries.scss */
+	.win-rating .win-star:before {
+		content: "\E082" !important;
+	}
+
+	/* line 659, _media-queries.scss */
+	.win-rating .win-star.win-full {
+		color: HighLight;
+	}
+
+	/* line 662, _media-queries.scss */
+	.win-rating .win-star.win-tentative.win-full {
+		color: ButtonText;
+	}
+
+	/* line 665, _media-queries.scss */
+	.win-rating .win-star.win-empty {
+		color: ButtonFace;
+	}
+
+	/* line 668, _media-queries.scss */
+	.win-rating .win-star:after {
+		content: "\E224" !important;
+		position: relative;
+		top: -100%;
+		color: ButtonText;
+	}
+
+	/*
+	  Toggle control high contrast colors.
+	  */
+	/* line 678, _media-queries.scss */
+	.win-toggleswitch .win-switch::-ms-thumb {
+		height: 17px;
+		/* 19px - 1px borders */
+	}
+
+	/* line 681, _media-queries.scss */
+	.win-toggleswitch .win-switch:disabled::-ms-fill-lower {
+		background-color: GrayText;
+	}
+
+	/*
+	  Tooltip high contrast colors.
+	  */
+	/* line 688, _media-queries.scss */
+	.win-tooltip {
+		background-color: Window;
+		border-color: WindowText;
+		color: WindowText;
+	}
+}
+
+/* --- media queries ------------------------------------------------------------------------------------------------ */
+@media screen and (max-width: 1024px) {
+	/* line 713, _media-queries.scss */
+	body {
+		font-size: 0.8em;
+	}
+
+	/* line 717, _media-queries.scss */
+	button.win-command .win-label {
+		display: none;
+	}
+
+	/* line 720, _media-queries.scss */
+	button.win-command .win-commandicon {
+		margin: 0 8px;
+		/* 2px margin for focus */
+	}
+
+	/* line 723, _media-queries.scss */
+	.win-commandlayout {
+		min-height: 68px;
+	}
+
+	/* line 726, _media-queries.scss */
+	hr.win-command {
+		margin-bottom: 14px;
+		margin-top: 14px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	/* to avoid the adjustment of fonts on iOS devices you should keep this line */
+	/* line 744, _media-queries.scss */
+	* {
+		-webkit-text-size-adjust: none;
+		-ms-text-size-adjust: none;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	/* line 760, _media-queries.scss */
+	hr.win-command {
+		margin-left: 10px;
+		margin-right: 9px;
+	}
+
+	/* line 764, _media-queries.scss */
+	hr.win-command:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+		margin-left: 9px;
+		margin-right: 10px;
+	}
+
+	/* line 768, _media-queries.scss */
+	.win-commandlayout {
+		padding-right: 10px;
+		width: calc(100% -20px);
+	}
+
+	/* line 773, _media-queries.scss */
+	.win-commandlayout.win-bottom {
+		/* Overflow buttons up instead of down */
+		writing-mode: lr-bt;
+	}
+
+	/* line 778, _media-queries.scss */
+	.win-commandlayout.win-bottom:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+		writing-mode: rl-bt;
+	}
+}
+
+/* --- iPad --------------------------------------------------------------------------------------------------------- */
+/* --- iPhone 4(S) retina ------------------------------------------------------------------------------------------- */
+/* --- iPhone ------------------------------------------------------------------------------------------------------- */
+/* --- print (optional) --------------------------------------------------------------------------------------------- */
+@media print {
+	/* line 805, _media-queries.scss */
+	body {
+		background: transparent !important;
+		color: black !important;
+		text-shadow: none !important;
+		filter: none !important;
+		-ms-filter: none !important;
+	}
+
+	/* Black prints faster: sanbeiji.com/archives/953 */
+	/* line 813, _media-queries.scss */
+	a, a:visited {
+		color: #444 !important;
+		text-decoration: underline;
+	}
+
+	/* line 817, _media-queries.scss */
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	/* line 820, _media-queries.scss */
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/* line 823, _media-queries.scss */
+	.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+		content: "";
+	}
+
+	/* Don't show links for images, or javascript/internal links */
+	/* line 827, _media-queries.scss */
+	pre, blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	/* line 831, _media-queries.scss */
+	thead {
+		display: table-header-group;
+	}
+
+	/* css-discuss.incutio.com/wiki/Printing_Tables */
+	/* line 835, _media-queries.scss */
+	tr, img {
+		page-break-inside: avoid;
+	}
+
+	/* line 838, _media-queries.scss */
+	img {
+		max-width: 100% !important;
+	}
+
+	@page {
+		margin: 0.5cm;
+	}
+
+	/* line 845, _media-queries.scss */
+	p, h2, h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	/* line 850, _media-queries.scss */
+	h2, h3 {
+		page-break-after: avoid;
+	}
+}
+
+/* Smaller screens */
+/* Mobile */
+@media handheld, only screen and (max-width: 767px) {
+	/* line 878, _media-queries.scss */
+	body {
+		font-size: 14px;
+		-webkit-text-size-adjust: none;
+	}
+
+	/* line 883, _media-queries.scss */
+	.row, body, .container {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	/* line 891, _media-queries.scss */
+	.row .onecol {
+		width: auto;
+		float: none;
+		position: static !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 1em;
+	}
+
+	/* line 891, _media-queries.scss */
+	.row .twocol {
+		width: auto;
+		float: none;
+		position: static !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 1em;
+	}
+
+	/* line 891, _media-queries.scss */
+	.row .threecol {
+		width: auto;
+		float: none;
+		position: static !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 1em;
+	}
+
+	/* line 891, _media-queries.scss */
+	.row .fourcol {
+		width: auto;
+		float: none;
+		position: static !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 1em;
+	}
+
+	/* line 891, _media-queries.scss */
+	.row .fivecol {
+		width: auto;
+		float: none;
+		position: static !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 1em;
+	}
+
+	/* line 891, _media-queries.scss */
+	.row .sixcol {
+		width: auto;
+		float: none;
+		position: static !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 1em;
+	}
+
+	/* line 891, _media-queries.scss */
+	.row .sevencol {
+		width: auto;
+		float: none;
+		position: static !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 1em;
+	}
+
+	/* line 891, _media-queries.scss */
+	.row .eightcol {
+		width: auto;
+		float: none;
+		position: static !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 1em;
+	}
+
+	/* line 891, _media-queries.scss */
+	.row .ninecol {
+		width: auto;
+		float: none;
+		position: static !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 1em;
+	}
+
+	/* line 891, _media-queries.scss */
+	.row .tencol {
+		width: auto;
+		float: none;
+		position: static !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 1em;
+	}
+
+	/* line 891, _media-queries.scss */
+	.row .elevencol {
+		width: auto;
+		float: none;
+		position: static !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 1em;
+	}
+
+	/* line 891, _media-queries.scss */
+	.row .twelvecol {
+		width: auto;
+		float: none;
+		position: static !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 1em;
+	}
+
+	/* line 902, _media-queries.scss */
+	img {
+		width: 100%;
+		height: 100%;
+	}
+
+	/* line 906, _media-queries.scss */
+	header {
+		overflow: visible;
+	}
+
+	/* line 909, _media-queries.scss */
+	.toolbar, .form-actions, header, footer, caption, menu, figure, figcaption, nav {
+		text-align: center;
+	}
+
+	/* line 912, _media-queries.scss */
+	textarea, input {
+		width: 98%;
+		min-width: 98%;
+		padding: 0.3663em;
+	}
+}
+
+/* line 8, style.scss */
+.fragment {
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 128px 1fr;
+	display: -ms-grid;
+	height: 100%;
+	width: 100%;
+}
+
+/* line 14, style.scss */
+.fragment header[role=banner] {
+	-ms-grid-columns: 39px 81px 1fr;
+	-ms-grid-rows: 1fr;
+	display: -ms-grid;
+}
+
+/* line 18, style.scss */
+.fragment header[role=banner] .win-backbutton {
+	-ms-grid-column: 2;
+	margin-top: 59px;
+}
+
+/* line 22, style.scss */
+.fragment header[role=banner] .titlearea {
+	-ms-grid-column: 3;
+	margin-top: 37px;
+}
+
+/* line 25, style.scss */
+.fragment header[role=banner] .titlearea .pagetitle {
+	width: calc(100% -20px);
+}
+
+/* line 30, style.scss */
+.fragment section[role=main] {
+	-ms-grid-row: 2;
+	height: 100%;
+	width: 100%;
+}

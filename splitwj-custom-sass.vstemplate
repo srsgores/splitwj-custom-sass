@@ -1,0 +1,142 @@
+<VSTemplate Version = "3.0.0" Type = "Project" xmlns = "http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name _locID = "JSP_Project_SplitName">Sass Custom Split App</Name>
+		<Description _locID = "JSP_Project_SplitDesc">A two-page project for a Windows Store app that navigates among
+			grouped items. The first page allows group selection while the second displays an item list alongside
+			details for the selected item.  New in this template is the complete customizability of the Metro UI
+			styles, all converted to SASS.  Using SASS, we can get a faster performance when running the app, and a
+			much more customizable UI.  To compile SASS, either install Scout (easiest):
+			http://mhs.github.com/scout-app/ or install the Ruby Gem.  More info on SASS at http://sass-lang.com/
+		</Description>
+		<Icon>splitwj.ico</Icon>
+		<ProjectType>JavaScript</ProjectType>
+		<BlendProjectSubType>WJApplication</BlendProjectSubType>
+		<TemplateID>Microsoft.JavaScript.SplitWJ-SASS-Custom</TemplateID>
+		<BlendTemplateID>Microsoft.Blend.SplitWWASCustom</BlendTemplateID>
+		<BlendTemplateGroupID>HTML (Windows Store)</BlendTemplateGroupID>
+		<SortOrder>30</SortOrder>
+		<CreateNewFolder>false</CreateNewFolder>
+		<BlendCreateNewFolder>true</BlendCreateNewFolder>
+		<DefaultName>SassApp</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+		<NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+		<PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+		<TargetPlatformName>Windows</TargetPlatformName>
+		<RequiredPlatformVersion>8</RequiredPlatformVersion>
+		<PreviewImage>splitwj.png</PreviewImage>
+	</TemplateData>
+	<TemplateContent>
+		<Project File = "Application.jsproj" ReplaceParameters = "true">
+			<ProjectItem TargetFileName = "js\index.js" ReplaceParameters = "true" OpenInEditor = "true"
+			             BlendOpenInEditor = "false">index.js
+			</ProjectItem>
+
+			<!--Project settings-->
+			<ProjectItem TargetFileName = "package.appxmanifest" ReplaceParameters = "true">package.appxmanifest
+			</ProjectItem>
+			<ProjectItem ReplaceParameters = "false" TargetFileName = "$projectname$_TemporaryKey.pfx"
+			             BlendDoNotCreate = "true">Application_TemporaryKey.pfx
+			</ProjectItem>
+
+			<!--HTML Files-->
+			<ProjectItem TargetFileName = "index.html" ReplaceParameters = "true" OpenInEditor =
+					"true" BlendOpenInEditor = "true">
+				index.html
+			</ProjectItem>
+			<ProjectItem TargetFileName = "pages\items\items.html" ReplaceParameters = "true">itemsPage.html
+			</ProjectItem>
+			<ProjectItem TargetFileName = "pages\split\split.html" ReplaceParameters = "true">splitPage.html
+			</ProjectItem>
+
+			<!--SASS Files-->
+			<ProjectItem TargetFileName = "sass\style.scss" ReplaceParameters = "false">style.scss</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\_split-page.scss" ReplaceParameters = "false">_split-page.scss
+			</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\_items-page.scss" ReplaceParameters = "false">_items-page.scss
+			</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\_ui-custom-dark.scss"
+			             ReplaceParameters = "false">_ui-custom-dark.scss
+			</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\_grids.scss" ReplaceParameters = "false">_grids.scss
+			</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\_reset.scss" ReplaceParameters = "false">_reset.scss
+			</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\_helpers.scss" ReplaceParameters = "false">_helpers.scss
+			</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\_variables.scss" ReplaceParameters = "false">_variables.scss
+			</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\_media-queries.scss"
+			             ReplaceParameters = "false">_media-queries.scss
+			</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\icomoon\_icomoon.scss"
+			             ReplaceParameters = "false">_icomoon.scss
+			</ProjectItem>
+
+			<!--Fonts-->
+			<ProjectItem TargetFileName = "fonts/icomoon/icomoon.eot"
+			             ReplaceParameters = "false">icomoon.eot
+			</ProjectItem>
+			<ProjectItem TargetFileName = "fonts/icomoon/icomoon.svg"
+			             ReplaceParameters = "false">icomoon.svg
+			</ProjectItem>
+			<ProjectItem TargetFileName = "fonts/icomoon/icomoon.woff"
+			             ReplaceParameters = "false">icomoon.woff
+			</ProjectItem>
+			<ProjectItem TargetFileName = "fonts/icomoon/icomoon.ttf"
+			             ReplaceParameters = "false">icomoon.ttf
+			</ProjectItem>
+			<ProjectItem TargetFileName = "fonts/icomoon/icomoon.dev.svg"
+			             ReplaceParameters = "false">icomoon.dev.svg
+			</ProjectItem>
+
+
+			<!--Windows 8 Customizable Metro Theme-->
+			<ProjectItem TargetFileName = "sass\partials\ui-custom-dark\_ui-custom-dark.scss"
+			             ReplaceParameters = "false">_ui-custom-dark.scss
+			</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\ui-custom-dark\_controls.scss"
+			             ReplaceParameters = "false">_controls.scss
+			</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\ui-custom-dark\_menu.scss"
+			             ReplaceParameters = "false">_menu.scss
+			</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\ui-custom-dark\_forms.scss"
+			             ReplaceParameters = "false">_forms.scss
+			</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\ui-custom-dark\_animations.scss"
+			             ReplaceParameters = "false">_animations.scss
+			</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\ui-custom-dark\_buttons.scss"
+			             ReplaceParameters = "false">_buttons.scss
+			</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\ui-custom-dark\_type.scss"
+			             ReplaceParameters = "false">_type.scss
+			</ProjectItem>
+			<ProjectItem TargetFileName = "sass\partials\ui-custom-dark\_progress.scss"
+			             ReplaceParameters = "false">_progress.scss
+			</ProjectItem>
+
+			<!--CSS Files-->
+			<ProjectItem TargetFileName = "css\style.css" ReplaceParameters = "true">style.css</ProjectItem>
+
+			<!--Javascript Files-->
+			<ProjectItem TargetFileName = "js\navigator.js" ReplaceParameters = "true">navigator.js</ProjectItem>
+			<ProjectItem TargetFileName = "js\data.js">data.js</ProjectItem>
+			<ProjectItem TargetFileName = "pages\split\split.js" ReplaceParameters = "true">splitPage.js</ProjectItem>
+			<ProjectItem TargetFileName = "pages\items\items.js" ReplaceParameters = "true">itemsPage.js</ProjectItem>
+
+			<!--Images-->
+			<ProjectItem TargetFileName = "img\logo.png">logo@scale-1x.png</ProjectItem>
+			<ProjectItem TargetFileName = "img\small-logo.png">small-logo@scale-1x.png</ProjectItem>
+			<ProjectItem TargetFileName = "img\splash-screen.png">splash-screen@scale-1x.png</ProjectItem>
+			<ProjectItem TargetFileName = "img\store-logo.png">store-logo@scale-1x.png</ProjectItem>
+
+		</Project>
+	</TemplateContent>
+	<WizardExtension>
+		<Assembly>Microsoft.VisualStudio.WinRT.TemplateWizards, Version=11.0.0.0, Culture=neutral,
+			PublicKeyToken=b03f5f7f11d50a3a
+		</Assembly>
+		<FullClassName>Microsoft.VisualStudio.WinRT.TemplateWizards.CreateProjectCertificate.Wizard</FullClassName>
+	</WizardExtension>
+</VSTemplate>

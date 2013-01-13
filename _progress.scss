@@ -1,0 +1,99 @@
+@import "_base.scss";
+
+/*
+Progress control.
+*/
+progress {
+	width: 180px;
+	height: 6px;
+	border-style: none;
+}
+
+progress.win-medium {
+	width: 280px;
+}
+
+progress.win-large {
+	width: 100%;
+}
+
+progress::-ms-fill {
+	border-style: none;
+}
+
+progress:indeterminate {
+	height: 4px;
+	padding: 1px 0; /* Indeterminate dots should be 4px tall, but overall control stays 6px. */
+}
+
+@keyframes win-progress-fade-out {
+	from {
+		opacity: 1.0;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
+
+progress.win-paused:not(:indeterminate) {
+	animation-name: win-progress-fade-out;
+	animation-duration: 3s;
+	animation-timing-function: cubic-bezier(0.03, 0.76, 0.31, 1.0);
+	opacity: 0.5;
+}
+
+progress.win-error::-ms-fill {
+	opacity: 0;
+}
+
+progress.win-ring:indeterminate::-ms-fill {
+	animation-name: -ms-ring;
+}
+
+progress.win-ring {
+	width: 20px;
+	height: 20px;
+}
+
+progress.win-medium.win-ring {
+	width: $marginLarge;
+	height: $marginLarge;
+}
+
+progress.win-large.win-ring {
+	width: 60px;
+	height: 60px;
+}
+
+/*
+Progress control colors.
+*/
+progress {
+	background-color: rgba(255, 255, 255, 0.35);
+	color: rgb(91, 46, 197);
+}
+
+.win-ui-light progress {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: rgb(70, 23, 180);
+}
+
+progress:indeterminate {
+	color: rgb(138, 87, 255);
+}
+
+.win-ui-light progress:indeterminate {
+	color: rgb(70, 23, 180);
+}
+
+progress::-ms-fill {
+	background-color: currentColor;
+}
+
+/*
+Explicitly define indeterminate background transparent for dark and light
+because ".win-ui-light progress" has higher specificity than "progress:indeterminate".
+*/
+progress:indeterminate, .win-ui-light progress:indeterminate {
+	background-color: transparent;
+}

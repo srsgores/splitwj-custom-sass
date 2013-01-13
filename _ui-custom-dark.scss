@@ -1,0 +1,25 @@
+@import "base.scss";
+@import "buttons.scss";
+@import "forms.scss";
+@import "controls.scss";
+@import "progress.scss";
+@import "animations.scss";
+@import "menu.scss";
+
+html, body {
+	height: 100%;
+	width: 100%;
+	-ms-user-select: none;
+	cursor: default;
+	-ms-scroll-translation: vertical-to-horizontal;
+}
+
+html {
+	overflow: hidden;
+}
+
+body {
+	-ms-content-zooming: none;
+}
+
+@import "media-queries.scss";

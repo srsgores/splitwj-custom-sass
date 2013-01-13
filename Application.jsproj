@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion = "4.0" DefaultTargets = "Build" xmlns = "http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label = "ProjectConfigurations">
+		<!-- This is obvious stuff we shouldn't have to modify -->
+		<ProjectConfiguration Include = "Debug|AnyCPU">
+			<Configuration>Debug</Configuration>
+			<Platform>AnyCPU</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include = "Debug|ARM">
+			<Configuration>Debug</Configuration>
+			<Platform>ARM</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include = "Debug|x64">
+			<Configuration>Debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include = "Debug|x86">
+			<Configuration>Debug</Configuration>
+			<Platform>x86</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include = "Release|AnyCPU">
+			<Configuration>Release</Configuration>
+			<Platform>AnyCPU</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include = "Release|ARM">
+			<Configuration>Release</Configuration>
+			<Platform>ARM</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include = "Release|x64">
+			<Configuration>Release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include = "Release|x86">
+			<Configuration>Release</Configuration>
+			<Platform>x86</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label = "Globals">
+		<ProjectGuid>$guid1$</ProjectGuid>
+	</PropertyGroup>
+	<PropertyGroup Condition = "'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
+		<VisualStudioVersion>11.0</VisualStudioVersion>
+	</PropertyGroup>
+	<Import Project = "$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+	        Condition = "Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+	<Import Project = "$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props"/>
+	<Import Project = "$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props"/>
+	<PropertyGroup>
+		<TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+		<TargetPlatformVersion>8.0</TargetPlatformVersion>
+		<!--target windows 8 only -->
+		<DefaultLanguage>$currentuiculturename$</DefaultLanguage>
+		$if$($includeKeyFile$==true)
+		<PackageCertificateKeyFile>$projectname$_TemporaryKey.pfx</PackageCertificateKeyFile>
+		$endif$
+	</PropertyGroup>
+	<ItemGroup>
+		<AppxManifest Include = "package.appxmanifest">
+			<SubType>Designer</SubType>
+		</AppxManifest>
+		<!-- This is the most important part.  Set how the project will be set up when the user creates a new project
+		- This means directory structure. -->
+		<Content Include = "css\style.css"/>
+		<Content Include = "sass\style.scss"/>
+		<Content Include = "sass\partials\_split-page.scss"/>
+		<Content Include = "sass\partials\_variables.scss"/>
+		<Content Include = "sass\partials\_helpers.scss"/>
+		<Content Include = "sass\partials\_items-page.scss"/>
+		<Content Include = "sass\partials\_grids.scss"/>
+		<Content Include = "sass\partials\_reset.scss"/>
+		<Content Include = "sass\partials\_media-queries.scss"/>
+		<Content Include = "sass\partials\icomoon\_icomoon.scss"/>
+		<Content Include = "fonts\icomoon\icomoon.eot"/>
+		<Content Include = "fonts\icomoon\icomoon.ttf"/>
+		<Content Include = "fonts\icomoon\icomoon.woff"/>
+		<Content Include = "fonts\icomoon\icomoon.dev.svg"/>
+
+		<!--Windows 8 Metro Dark Customizable Theme Files-->
+		<Content Include = "sass\partials\ui-custom-dark\_ui-custom-dark.scss"/>
+		<Content Include = "sass\partials\ui-custom-dark\_controls.scss"/>
+		<Content Include = "sass\partials\ui-custom-dark\_menu.scss"/>
+		<Content Include = "sass\partials\ui-custom-dark\_forms.scss"/>
+		<Content Include = "sass\partials\ui-custom-dark\_animations.scss"/>
+		<Content Include = "sass\partials\ui-custom-dark\_buttons.scss"/>
+		<Content Include = "sass\partials\ui-custom-dark\_type.scss"/>
+		<Content Include = "sass\partials\ui-custom-dark\_progress.scss"/>
+
+		<Content Include = "img\logo.png"/>
+		<Content Include = "img\small-logo.png"/>
+		<Content Include = "img\splash-screen.png"/>
+		<Content Include = "img\store-logo.png"/>
+		<Content Include = "js\data.js"/>
+		<Content Include = "js\index.js"/>
+		<Content Include = "js\navigator.js"/>
+		<Content Include = "pages\items\items.html"/>
+		<Content Include = "pages\items\items.js"/>
+		<Content Include = "pages\split\split.html"/>
+		<Content Include = "pages\split\split.js"/>
+		<Content Include = "index.html"/>
+		$if$($includeKeyFile$==true)
+		<None Include = "$projectname$_TemporaryKey.pfx"/>
+		$endif$
+	</ItemGroup>
+	<ItemGroup>
+		<SDKReference Include = "Microsoft.WinJS.1.0, Version=1.0"/>
+	</ItemGroup>
+	<Import Project = "$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets"/>
+	<!-- To modify your build process, add your task inside one of the targets below then uncomment
+			 that target and the DisableFastUpToDateCheck PropertyGroup. 
+			 Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	<PropertyGroup>
+		<DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+	</PropertyGroup>
+	-->
+</Project>

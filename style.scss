@@ -1,0 +1,35 @@
+@import "base.scss";
+@import "grids.scss";
+@import "ui-custom-dark.scss";
+
+//main styles can go here
+
+//demo styles are below
+.fragment {
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 128px 1fr;
+	display: -ms-grid;
+	height: 100%;
+	width: 100%;
+	header[role=banner] {
+		-ms-grid-columns: 39px 81px 1fr;
+		-ms-grid-rows: 1fr;
+		display: -ms-grid;
+		.win-backbutton {
+			-ms-grid-column: 2;
+			margin-top: 59px;
+		}
+		.titlearea {
+			-ms-grid-column: 3;
+			margin-top: 37px;
+			.pagetitle {
+				width: calc(100% -20px);
+			}
+		}
+	}
+	section[role=main] {
+		-ms-grid-row: 2;
+		height: 100%;
+		width: 100%;
+	}
+}

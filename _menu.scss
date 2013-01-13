@@ -1,0 +1,282 @@
+@import "base.scss";
+
+/*
+Flyout control.
+*/
+.win-flyout {
+	z-index: 1008;
+	position: fixed;
+	padding: 25px 20px 20px 20px;
+	border-style: solid;
+	border-width: 2px;
+	margin: 5px;
+	min-width: 26px; /* 70px - padding - border = 26px */
+	max-width: 466px; /* 510px - padding - border = 466px */
+	min-height: 5px; /* 54px - padding - border = 5px */
+	max-height: calc(100% - 59px); /* 768px - margin - padding - border = 709px */
+	width: auto;
+	height: auto;
+	word-wrap: break-word;
+	overflow: auto;
+	-ms-touch-select: none;
+	font-size: 11pt;
+	font-weight: 400;
+	line-height: 1.3636; /* 20px when font-size is 11pt */
+}
+
+.win-flyout.win-leftalign {
+	margin-left: 0;
+}
+
+.win-flyout.win-rightalign {
+	margin-right: 0;
+}
+
+.win-flyout.win-scrolls {
+	overflow: auto;
+}
+
+/*
+Menu control.
+*/
+.win-menu {
+	padding: 5px 0 5px 0;
+	line-height: 33px;
+	text-align: left; /* Set explicitly in case our parent has different alignment, like appbar overflow. */
+	min-height: 38px; /* 54px - padding - border = 38px */
+	max-height: calc(100% - 26px); /* 768px - margin - padding - border = 742px */
+	max-width: none;
+}
+
+.win-menu:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	text-align: right; /* Set explicitly in case our parent has different alignment, like appbar overflow. */
+}
+
+/*
+Menu commands.
+*/
+.win-menu button.win-command {
+	display: block;
+	border: none;
+	padding: 10px 20px 12px 20px;
+	margin-left: 0;
+	margin-right: 0;
+	float: none;
+	text-align: left;
+	width: 100%;
+	font-size: 11pt;
+	font-weight: 600;
+	line-height: 18px; /* 40px - 10px top padding - 12px bottom padding */
+}
+
+.win-menu button.win-command:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	text-align: right;
+}
+
+.win-menu button.win-command:focus {
+	outline: none;
+}
+
+.win-menu hr.win-command {
+	display: block;
+	height: 1px;
+	width: auto;
+	border: 0;
+
+	padding: 0;
+	margin: 9px 20px 10px 20px;
+}
+
+/*
+Menu toggle buttons.
+*/
+.win-menu-toggle button.win-command::before {
+	font-family: 'Segoe UI Symbol';
+	content: "\E0E7";
+	visibility: hidden;
+	padding-left: 0px;
+	padding-right: 10px;
+}
+
+.win-menu-toggle button[aria-checked=true].win-command::before {
+	/* Display a checkbox if aria-checked is set */
+	visibility: visible;
+}
+
+.win-menu-toggle button.win-command:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm)::before {
+	padding-right: 0;
+	padding-left: 10px;
+	float: right;
+}
+
+/*
+Settings Pane
+*/
+.win-settingsflyout {
+	z-index: 1004; /* above appbar and below flyouts */
+	border-left: 1px solid;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 345px; /* 346px - border (1px) */
+	-ms-touch-select: none;
+}
+
+.win-settingsflyout.win-wide {
+	width: 645px; /* 646px - border (1px) */
+}
+
+.win-settingsflyout .win-header {
+	padding-left: $marginLarge;
+	padding-right: $marginLarge;
+	padding-top: 32px;
+	height: 48px;
+}
+
+/* Settings back button is slightly smaller. */
+.win-settingsflyout .win-backbutton {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	font-size: 8pt;
+	line-height: 26px;
+	margin-top: 3px;
+}
+
+.win-settingsflyout .win-header .win-label {
+	display: inline-block;
+	padding-left: $marginLarge;
+	font-size: 20pt;
+	line-height: 33px;
+}
+
+.win-settingsflyout .win-content {
+	overflow: auto;
+	padding-left: $marginLarge;
+	padding-right: $marginLarge;
+	padding-top: 33px;
+	height: calc(100% - 112px);
+}
+
+.win-settingsflyout .win-label {
+	font-size: 20pt;
+	font-weight: 200;
+	line-height: normal;
+}
+
+.win-settingsflyout:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	right: auto;
+	left: 0;
+	border-left: none;
+	border-right: 1px solid;
+}
+
+.win-settingsflyout .win-header .win-label:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	padding-right: $marginLarge;
+	padding-left: 0;
+}
+
+.win-settingsflyout .win-content .win-settings-section {
+	padding-top: 0;
+	padding-bottom: 39px;
+}
+
+.win-settingsflyout .win-content .win-settings-section p {
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 25px;
+}
+
+.win-settingsflyout .win-content .win-settings-section a {
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 25px;
+	display: inline-block;
+}
+
+.win-settingsflyout .win-content .win-settings-section .win-toggleswitch {
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 20px;
+}
+
+.win-settingsflyout .win-content .win-settings-section label {
+	display: block;
+	padding-bottom: 7px;
+}
+
+.win-settingsflyout .win-content .win-settings-section button,
+.win-settingsflyout .win-content .win-settings-section select,
+.win-settingsflyout .win-content .win-settings-section input[type=button],
+.win-settingsflyout .win-content .win-settings-section input[type=text] {
+	margin-bottom: 25px;
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+.win-settingsflyout .win-content .win-settings-section input[type=radio] {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 15px;
+}
+
+.win-settingsflyout .win-content .win-settings-section button:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-bottom: 25px;
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+.win-settingsflyout .win-content .win-settings-section select:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-bottom: 25px;
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+.win-settingsflyout .win-content .win-settings-section input[type=text]:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-bottom: 25px;
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+.win-settingsflyout .win-content .win-settings-section input[type=button]:-ms-lang(ar, dv, fa, he, ku-Arab, pa-Arab, prs, ps, sd-Arab, syr, ug, ur, qps-plocm) {
+	margin-bottom: 25px;
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+/*
+Common AppBar/Flyout/SettingsFlyout styles
+*/
+
+.win-flyout input[type=text],
+.win-settingsflyout input[type=text],
+.win-appbar input[type=text] {
+	-ms-touch-select: grippers;
+}
+
+.win-appbarclickeater {
+	z-index: 1000;
+	opacity: 0;
+	background-color: Purple;
+	display: none;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	-ms-touch-action: none;
+}
+
+.win-flyoutmenuclickeater {
+	z-index: 1006;
+	opacity: 0;
+	background-color: Lime;
+	display: none;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	-ms-touch-action: none;
+}
