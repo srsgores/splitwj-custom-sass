@@ -23,7 +23,7 @@
       <file leaf-file-name="itemsPage.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/itemsPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="-0.7352941">
+            <state line="7" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -50,16 +50,7 @@
       <file leaf-file-name="package.appxmanifest" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.appxmanifest">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="19" selection-start="638" selection-end="638" vertical-scroll-proportion="-5.882353">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="splitwj-custom.vstemplate" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/splitwj-custom.vstemplate">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="56" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.41866028">
+            <state line="26" column="19" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,7 +77,7 @@
       <file leaf-file-name="Application.jsproj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application.jsproj">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="53" selection-start="4117" selection-end="4117" vertical-scroll-proportion="-26.470589">
+            <state line="84" column="53" selection-start="4117" selection-end="4117" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,6 +87,24 @@
         <entry file="file://$PROJECT_DIR$/_animations.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="25" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="51" selection-start="610" selection-end="610" vertical-scroll-proportion="0.31609195">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.markdown" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../../GitHub/compass/README.markdown">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="9" selection-start="0" selection-end="1049" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/_controls.scss" />
         <option value="$PROJECT_DIR$/_menu.scss" />
         <option value="$PROJECT_DIR$/_type.scss" />
         <option value="$PROJECT_DIR$/_forms.scss" />
@@ -127,6 +135,7 @@
         <option value="$PROJECT_DIR$/_media-queries.scss" />
         <option value="$PROJECT_DIR$/Application.jsproj" />
         <option value="$PROJECT_DIR$/splitwj-custom.vstemplate" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -163,6 +172,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -177,13 +187,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="splitwj-custom" />
+              <option name="myItemId" value="splitwj-custom-sass" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -191,8 +200,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.externalResources" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -330,42 +339,32 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/_forms.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="11" column="24" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_buttons.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="27" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="58" column="27" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="1" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="34" column="1" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="9" selection-start="1450" selection-end="1450" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="46" column="9" selection-start="1450" selection-end="1450" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/itemsPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="-0.7352941">
+        <state line="7" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -393,11 +392,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_media-queries.scss">
@@ -416,21 +411,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.appxmanifest">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="19" selection-start="638" selection-end="638" vertical-scroll-proportion="-5.882353">
+        <state line="26" column="19" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application.jsproj">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="53" selection-start="4117" selection-end="4117" vertical-scroll-proportion="-26.470589">
+        <state line="84" column="53" selection-start="4117" selection-end="4117" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/splitwj-custom.vstemplate">
+    <entry file="file://$PROJECT_DIR$/../../../../../GitHub/compass/README.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="56" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.41866028">
+        <state line="12" column="9" selection-start="0" selection-end="1049" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="51" selection-start="610" selection-end="610" vertical-scroll-proportion="0.31609195">
           <folding />
         </state>
       </provider>
